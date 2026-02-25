@@ -1,0 +1,128 @@
+/* What's Included Section */
+.whats-included-flex-section {
+  display: flex;
+  min-height: 600px;
+  background: white;
+}
+
+.section-title {
+  color: #1F3A5F;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.included-left-content {
+  flex: 1;
+  padding: 100px 5% 100px 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #C2DDFF26;
+}
+
+.included-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.included-feature-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.included-feature-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #E0F2FE;
+  color: #5B89B3;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.included-feature-text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1F3A5F;
+  margin-bottom: 8px;
+}
+
+.included-feature-text p {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.included-right-image {
+  flex: 1;
+  background-image: url('/Mockup wrap.png');
+  background-size: 100% auto;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-color: #C2DDFF26;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.laptop-mockup {
+  max-width: 800px;
+  height: auto;
+  position: relative;
+  transform: translateX(-15%);
+  z-index: 2;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+}
+
+.decorative-arrow {
+  position: absolute;
+  top: 10%;
+  left: -15%;
+  width: 155px;
+  height: auto;
+  z-index: 3;
+}
+
+@media (max-width: 1200px) {
+  .included-left-content {
+    padding-left: 40px;
+  }
+  .laptop-mockup {
+    width: 100%;
+    transform: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .whats-included-flex-section {
+    flex-direction: column;
+  }
+  .included-left-content {
+    padding: 80px 40px;
+  }
+  .included-right-image {
+    padding: 60px 40px;
+    overflow: hidden;
+  }
+  .laptop-mockup {
+    width: 100%;
+    transform: none;
+  }
+  .decorative-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .included-features-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

@@ -1,0 +1,142 @@
+/* About Page Hero Styles */
+.about-hero {
+  background: linear-gradient(142deg, #1F3A5F 28.29%, #0B1F3B 99.67%), #1F3A5F;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero-title {
+  color: #FFF;
+  font-family: inherit;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 61px;
+}
+
+.about-hero-description {
+  color: #FFF;
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  max-width: 620px;
+  opacity: 1; /* Explicitly set as per design */
+}
+
+.about-hero-image-container {
+  width: 540px;
+  height: 420px;
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+  background: url('/corporate-training-session.png') lightgray 0px -134.367px / 100% 206.879% no-repeat;
+}
+
+.about-hero-image {
+  display: none; /* Background image is used in container */
+}
+
+.years-badge {
+  width: 240.1px;
+  height: 85.6px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.50);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.10), 0 8px 10px -6px rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 5px;
+  left: 70%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.years-badge-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.years-badge-icon {
+  width: 48px;
+  height: 48px;
+  background: #E0F2FE;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.years-badge-number {
+  color: #1F3A5F;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.years-badge-label {
+  color: #0B1F3B;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* PMI ATP Section Styles */
+.atp-section-title {
+  color: #FFF;
+  font-family: inherit;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 125% */
+}
+
+.atp-section-description {
+  color: #FFF;
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  max-width: 1050px;
+}
+
+/* About Introduction Section Styles */
+.about-intro-section {
+  background: linear-gradient(180deg, rgba(154, 174, 211, 0.00) 0%, rgba(154, 174, 211, 0.10) 100%), #FFF;
+  padding: 100px 7% !important;
+}
+
+.about-intro-title {
+  color: #1F3A5F;
+  font-family: inherit;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  max-width: 450px;
+}
+
+.about-intro-description {
+  color: #0B1F3B;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 680px;
+}
+
+
+@media (max-width: 1024px) {
+  .about-hero-title {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+  .about-hero-image-container {
+    width: 100%;
+    max-width: 406px;
+  }
+}

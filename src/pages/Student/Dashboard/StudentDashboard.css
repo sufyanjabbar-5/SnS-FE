@@ -1,0 +1,687 @@
+.student-dashboard {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome-section {
+  margin-bottom: 24px;
+}
+
+.welcome-section h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 8px 0;
+}
+
+.welcome-section p {
+  color: #64748b;
+  margin: 0;
+  font-size: 16px;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.stat-box {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+}
+
+.stat-icon.blue {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.stat-icon.green {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.stat-icon.orange {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.stat-details h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 4px 0;
+}
+
+.stat-details p {
+  color: #64748b;
+  margin: 0;
+  font-size: 14px;
+}
+
+.dashboard-section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.section-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.browse-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.browse-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.action-card {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.action-card:hover {
+  border-color: #3b82f6;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.15);
+}
+
+.action-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.action-icon.blue {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.action-icon.green {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.action-icon.purple {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+.action-icon.orange {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.action-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.action-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  gap: 16px;
+}
+
+.empty-state i {
+  font-size: 64px;
+  color: #cbd5e1;
+}
+
+.empty-state h3 {
+  font-size: 24px;
+  color: #1e293b;
+  margin: 0;
+}
+
+.empty-state p {
+  color: #64748b;
+  margin: 0;
+}
+
+.cta-btn {
+  margin-top: 16px;
+  padding: 12px 32px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cta-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.courses-list {
+  display: grid;
+  gap: 20px;
+}
+
+.enrollment-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s;
+}
+
+.enrollment-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.card-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 4px 0;
+}
+
+.course-code {
+  color: #64748b;
+  font-size: 14px;
+  margin: 0;
+}
+
+.enrollment-status {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.enrollment-status.pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.enrollment-status.confirmed {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.enrollment-status.cancelled {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.card-body {
+  margin-bottom: 20px;
+}
+
+.course-description {
+  color: #64748b;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.course-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.info-item i {
+  color: #3b82f6;
+  width: 16px;
+}
+
+.payment-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+  font-size: 13px;
+}
+
+.payment-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.payment-status.pending {
+  color: #d97706;
+}
+
+.payment-status.paid {
+  color: #059669;
+}
+
+.payment-status i {
+  font-size: 8px;
+}
+
+.enrollment-date {
+  color: #94a3b8;
+}
+
+.card-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-pay,
+.btn-view,
+.btn-access,
+.btn-cancel {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-pay {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+}
+
+.btn-pay:hover:not(:disabled) {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-pay:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-view {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.btn-view:hover {
+  background: #e2e8f0;
+  color: #3b82f6;
+}
+
+.btn-access {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-access:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.btn-cancel {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.btn-cancel:hover:not(:disabled) {
+  background: #dc2626;
+  color: white;
+  border-color: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
+.btn-cancel:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 16px;
+}
+
+.loading-container i {
+  font-size: 48px;
+  color: #3b82f6;
+}
+
+.loading-container p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .browse-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card-header {
+    flex-direction: column;
+  }
+
+  .course-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .card-actions {
+    flex-direction: column;
+  }
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.2s ease;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #1e293b;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: #64748b;
+  cursor: pointer;
+  padding: 5px;
+  transition: color 0.2s;
+}
+
+.modal-close:hover {
+  color: #1e293b;
+}
+
+.modal-body {
+  padding: 24px;
+}
+
+.modal-body h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.5rem;
+  color: #1e293b;
+}
+
+.modal-body .course-description {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.modal-body .detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-body .detail-item strong {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.modal-body .detail-item span {
+  font-size: 1rem;
+  color: #1e293b;
+}
+
+.enrollment-info {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.enrollment-info h4 {
+  margin: 0 0 12px 0;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.status-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status-badge.pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status-badge.confirmed {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.status-badge.paid {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.status-badge.cancelled {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.enrolled-date {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 24px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.btn-secondary {
+  padding: 10px 20px;
+  background: #f1f5f9;
+  color: #64748b;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+@media (max-width: 480px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .status-row {
+    flex-direction: column;
+  }
+}

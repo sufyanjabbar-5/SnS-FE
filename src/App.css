@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", "Segoe UI", "Roboto", "Helvetica Neue", Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.self-center{
+  align-self: center;
+}
+
+.align-center{
+  align-items: center;
+}
+/* Utility Classes */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.text-white {
+  color: #fff !important;
+}
+/* Button Reset */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Loading Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease;
+}
+
+/* Focus Styles for Accessibility */
+*:focus-visible {
+  outline: none;
+  outline-offset: 2px;
+}
+
+/* Premium Loading Screen */
+.loading-spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #0B1F3B; /* Navy background */
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.loading-content {
+  text-align: center;
+  max-width: 300px;
+}
+
+.loading-logo {
+  margin-bottom: 30px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.loading-logo img {
+  height: 60px;
+  width: auto;
+}
+
+.loading-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.loading-progress {
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, #FFAB3D, #FF9124);
+  animation: loading-slide 1.5s ease-in-out infinite;
+}
+
+.loading-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+@keyframes loading-slide {
+  0% { transform: translateX(-150%); }
+  50% { transform: translateX(50%); }
+  100% { transform: translateX(150%); }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.8; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0.8; transform: scale(0.98); }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ============================================
+   Extracted from tailwind.css
+   ============================================ */
+
+/* Custom Component Classes */
+.all-\[unset\] {
+  all: unset;
+}
+
+/* CSS Variables - Foundation Colors, Animations, and Shadcn/UI */
+:root {
+  /* Foundation Color Variables */
+  --foundation-blueb100: rgba(107, 180, 203, 1);
+  --foundation-orangeo300: rgba(255, 109, 48, 1);
+  --animate-spin: spin 1s linear infinite;
+
+  /* Shadcn/UI CSS Variables - Light Mode */
+  --background: 0 0% 100%;
+  --foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 47.4% 11.2%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+
+  --card: transparent;
+  --card-foreground: 222.2 47.4% 11.2%;
+
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 210 40% 98%;
+
+  --ring: 215 20.2% 65.1%;
+
+  --radius: 0.5rem;
+}
+
+/* Animation Classes */
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+/* Keyframe Animations */
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+/* Shadcn/UI CSS Variables - Dark Mode */
+.dark {
+  --background: 224 71% 4%;
+  --foreground: 213 31% 91%;
+
+  --muted: 223 47% 11%;
+  --muted-foreground: 215.4 16.3% 56.9%;
+
+  --accent: 216 34% 17%;
+  --accent-foreground: 210 40% 98%;
+
+  --popover: 224 71% 4%;
+  --popover-foreground: 215 20.2% 65.1%;
+
+  --border: 216 34% 17%;
+  --input: 216 34% 17%;
+
+  --card: transparent;
+  --card-foreground: 213 31% 91%;
+
+  --primary: 210 40% 98%;
+  --primary-foreground: 222.2 47.4% 1.2%;
+
+  --secondary: 222.2 47.4% 11.2%;
+  --secondary-foreground: 210 40% 98%;
+
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 210 40% 98%;
+
+  --ring: 216 34% 17%;
+
+  --radius: 0.5rem;
+}
+
+/* Base Styles */
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "rlig" 1, "calt" 1;
+}

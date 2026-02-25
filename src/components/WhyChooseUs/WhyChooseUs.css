@@ -1,0 +1,102 @@
+/* Why Choose Us Section */
+.choose-us-section {
+  max-width: 100%;
+  padding: 80px 7%;
+  background: linear-gradient(180deg, rgba(194, 221, 255, 0.75) 0%, rgba(194, 221, 255, 0.15) 100%),
+linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+.choose-us-section .container{
+  max-width: 100%;
+}
+
+.choose-us-section .section-subtitle{
+  margin: auto;
+  max-width: 700px;
+}
+
+.choose-us-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.feature-card-new {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  flex: 1;
+  min-width: 200px;
+  max-width: 240px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card-new:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon-box {
+  width: 50px;
+  height: 50px;
+  background-color: #C2DDFF80;
+  color: #5B89B3;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.feature-card-new h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1F3A5F;
+  margin-bottom: 12px;
+}
+
+.feature-card-new p {
+  font-size: 14px;
+  color: #0B1F3BBF;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Stats Banner */
+.stats-banner {
+  background: #5B89B3;
+  background: linear-gradient(90deg, #5B89B3 0%, #4a7aa5 100%);
+  border-radius: 16px;
+  padding: 40px;
+  color: white;
+}
+
+.stats-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+  min-width: 150px;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 14px;
+  opacity: 0.9;
+}

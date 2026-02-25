@@ -1,0 +1,86 @@
+/* StudentCertificates.css */
+
+.student-certificates {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+.sc-header {
+  margin-bottom: 32px;
+}
+
+.sc-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 6px 0;
+}
+
+.sc-header p {
+  color: #64748b;
+  font-size: 15px;
+  margin: 0;
+}
+
+.sc-empty {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.05);
+  text-align: center;
+  padding: 100px 40px;
+}
+
+.sc-empty-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.sc-empty-icon i {
+  font-size: 42px;
+  color: #7c3aed;
+}
+
+.sc-empty h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 12px 0;
+}
+
+.sc-empty p {
+  color: #64748b;
+  font-size: 15px;
+  max-width: 420px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+.sc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #7c3aed;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.sc-btn:hover {
+  background: #6d28d9;
+  transform: translateY(-1px);
+}

@@ -1,0 +1,2421 @@
+/* Scoped styles - All styles are prefixed with .live-virtual-classes to prevent affecting other components */
+.live-virtual-classes {
+  width: 100%;
+}
+
+/* Hero Section - Exact Figma Colors */
+.live-virtual-classes .hero-section {
+  background: linear-gradient(165.69deg, rgb(31, 58, 95) 28.291%, rgb(11, 31, 59) 99.666%);
+  color: white;
+  padding: 80px 0;
+  min-height: 473px;
+  display: flex;
+  align-items: center;
+}
+
+.live-virtual-classes .hero-container {
+  max-width: 1920px;
+  width: 100% !important;
+  margin: 0 auto;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.live-virtual-classes .hero-content {
+  flex: 1;
+  max-width: 697px;
+}
+
+.live-virtual-classes .hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #c2ddff;
+  border: 1px solid rgba(194, 221, 255, 0.25);
+  padding: 8px 13px;
+  border-radius: 33554400px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #364153;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.live-virtual-classes .badge-icon { 
+  font-size: 16px;
+}
+
+.live-virtual-classes .hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.live-virtual-classes .hero-subtitle {
+  display: block;
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.live-virtual-classes .hero-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  color: #ffffff;
+}
+
+.live-virtual-classes .hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.live-virtual-classes .btn {
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.live-virtual-classes .btn-primary {
+  background: linear-gradient(180deg, rgb(254, 196, 77) 0%, rgb(250, 135, 55) 100%);
+  color: #0b1f3b;
+  font-weight: 600;
+}
+
+.live-virtual-classes .btn-primary:hover {
+  background: linear-gradient(180deg, rgb(250, 180, 65) 0%, rgb(245, 120, 45) 100%);
+  transform: translateY(-2px);
+}
+
+.live-virtual-classes .btn-secondary {
+  background: transparent;
+  color: #c2ddff;
+  border: 1px solid #c2ddff;
+}
+
+.live-virtual-classes .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.live-virtual-classes .hero-image {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.live-virtual-classes .hero-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Section Styles */
+.live-virtual-classes .container {
+  max-width: 100% !important;
+  margin: 0 auto;
+  padding: 0 100px !important;
+}
+
+.live-virtual-classes .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.live-virtual-classes .section-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1f3a5f;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+.live-virtual-classes .section-subtitle {
+  font-size: 20px;
+  color: #0b1f3b;
+  max-width: 669px;
+  margin: 0 auto;
+  line-height: 28px;
+}
+
+/* About Section */
+.live-virtual-classes .about-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.live-virtual-classes .about-section .container {
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  gap: 75px;
+  align-items: start;
+  padding: 0 100px !important;
+  max-width: 1920px;
+}
+
+.live-virtual-classes .about-section .section-header {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.live-virtual-classes .about-section .section-title {
+  text-align: left;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 31px;
+}
+
+.live-virtual-classes .about-section .section-subtitle {
+  text-align: left;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.live-virtual-classes .about-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 715px;
+}
+
+.live-virtual-classes .about-card {
+  background: rgba(154, 174, 211, 0.1);
+  border: 1px solid rgba(154, 174, 211, 0.25);
+  border-radius: 14px;
+  padding: 25px;
+  text-align: left;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.live-virtual-classes .card-icon-wrapper {
+  flex-shrink: 0;
+}
+
+.live-virtual-classes .card-icon-bg {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.live-virtual-classes .card-icon-bg img {
+  width: 32px;
+  height: 32px;
+}
+
+.live-virtual-classes .card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.live-virtual-classes .card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f3a5f;
+  margin-bottom: 4px;
+  line-height: 32px;
+}
+
+.live-virtual-classes .card-description {
+  font-size: 16px;
+  color: #0b1f3b;
+  line-height: 24px;
+}
+
+/* Target Audience Section */
+.live-virtual-classes .target-audience-section {
+  padding: 80px 0;
+  background: linear-gradient(to bottom, rgba(194, 221, 255, 0.15), rgba(194, 221, 255, 0.5));
+}
+
+/* Target Audience Section - Special padding from Figma (144px = 10% at 1920px) */
+.live-virtual-classes .target-audience-section .container {
+  padding: 0 144px !important;
+}
+
+.live-virtual-classes .audience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.live-virtual-classes .audience-card {
+  background: white;
+  border: 2px solid rgba(154, 174, 211, 0.25);
+  border-radius: 14px;
+  padding: 42px 26px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.live-virtual-classes .audience-card:hover {
+  transform: translateY(-5px);
+}
+
+.live-virtual-classes .audience-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(194, 221, 255, 0.5);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.live-virtual-classes .audience-icon img {
+  width: 28px;
+  height: 28px;
+}
+
+.live-virtual-classes .audience-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.live-virtual-classes .audience-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f3a5f;
+  margin: 0;
+  line-height: 28px;
+}
+
+.live-virtual-classes .audience-description {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #0b1f3b;
+  line-height: 28px;
+  opacity: 0.75;
+  margin: 0;
+}
+
+
+/* Batches Section */
+.live-virtual-classes .batches-section {
+  padding: 40px 0;
+  background: linear-gradient(to bottom, rgba(154, 174, 211, 0), rgba(154, 174, 211, 0.1));
+}
+
+/* Hide pagination dots on desktop */
+.live-virtual-classes .batches-pagination-dots {
+  display: none;
+}
+
+.live-virtual-classes .batches-section .container {
+  padding: 0 100px !important;
+  max-width: 1920px;
+}
+
+/* Batches Filter Options */
+.live-virtual-classes .batches-filter-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.live-virtual-classes .timezone-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.live-virtual-classes .timezone-label {
+  font-size: 16px;
+  color: #1f3a5f;
+  font-weight: 400;
+}
+
+.live-virtual-classes .timezone-dropdown-wrapper {
+  position: relative;
+}
+
+.live-virtual-classes .timezone-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #0b1f3b;
+  border-radius: 8px;
+  padding: 12px 14px;
+  height: 48px;
+  background: white;
+  cursor: pointer;
+  min-width: 250px;
+  justify-content: space-between;
+}
+
+.live-virtual-classes .timezone-dropdown span {
+  font-size: 14px;
+  color: #0b1f3b;
+  flex: 1;
+}
+
+.live-virtual-classes .timezone-chevron {
+  width: 24px;
+  height: 24px;
+  transform: scaleY(-1);
+  transition: transform 0.3s ease;
+}
+
+.live-virtual-classes .timezone-chevron.open {
+  transform: scaleY(1);
+}
+
+.live-virtual-classes .timezone-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #0b1f3b;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+  margin-top: 4px;
+}
+
+.live-virtual-classes .timezone-option {
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #0b1f3b;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.live-virtual-classes .timezone-option:hover {
+  background-color: #E8F2FF;
+}
+
+.live-virtual-classes .timezone-option.selected {
+  background-color: #c2ddff;
+  font-weight: 600;
+}
+
+.live-virtual-classes .enrollment-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.live-virtual-classes .enroll-multiple-link,
+.live-virtual-classes .request-private-link {
+  font-size: 14.9px;
+  color: #60a6fb;
+  text-decoration: underline;
+  text-decoration-thickness: 10.5%;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.live-virtual-classes .link-separator {
+  font-size: 14.9px;
+  color: #1f3a5f;
+  opacity: 0.25;
+}
+
+/* Batches List */
+.live-virtual-classes .batches-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 30px;
+}
+
+.live-virtual-classes .batch-card-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(91, 137, 179, 0.05);
+  border-radius: 5px;
+  padding: 0 28px;
+  height: 120px;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.live-virtual-classes .batch-card-row.batch-card-alt {
+  background: rgba(91, 137, 179, 0.15);
+  height: 125px;
+}
+
+/* Date Section */
+.live-virtual-classes .batch-date-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 135px;
+  flex-shrink: 0;
+}
+
+.live-virtual-classes .batch-date {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1f3a5f;
+  line-height: 24px;
+}
+
+.live-virtual-classes .class-details-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14.4px;
+  color: #005873;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 24px;
+  width: fit-content;
+}
+
+.live-virtual-classes .class-details-arrow {
+  width: 24px;
+  height: 24px;
+  transform: scaleX(-1);
+}
+
+/* Class Type */
+.live-virtual-classes .batch-class-type {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 200px;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.live-virtual-classes .batch-icon {
+  width: 24px;
+  height: 24px;
+  transform: scaleY(-1);
+  flex-shrink: 0;
+}
+
+.live-virtual-classes .batch-class-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #0b1f3b;
+  line-height: 24px;
+}
+
+.live-virtual-classes .batch-class-text span:first-child {
+  margin-bottom: 0;
+}
+
+/* Time */
+.live-virtual-classes .batch-time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 200px;
+  flex-shrink: 0;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #0b1f3b;
+  line-height: 24px;
+}
+
+/* Price Section - Normal */
+.live-virtual-classes .batch-price-normal {
+  font-size: 18.7px;
+  font-weight: 700;
+  color: #0b1f3b;
+  line-height: 24px;
+  min-width: 150px;
+  flex-shrink: 0;
+  margin-left: 20px;
+  text-align: left;
+}
+
+/* Price Section - Flash Sale */
+.live-virtual-classes .batch-price-flash-sale {
+  width: 203px;
+  height: 103px;
+  background: linear-gradient(158.49deg, rgb(31, 58, 95) 28.291%, rgb(11, 31, 59) 99.666%);
+  border-radius: 4px;
+  position: relative;
+  flex-shrink: 0;
+  margin-left: 20px;
+  overflow: visible;
+  align-self: center;
+}
+
+.live-virtual-classes .flash-sale-badge {
+  position: absolute;
+  top: 4.79px;
+  left: -5px;
+  background: #f0ad4e;
+  width: 94.78px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #171717;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 16px;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.live-virtual-classes .flash-sale-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.live-virtual-classes .save-text {
+  position: absolute;
+  left: 12px;
+  top: 36.79px;
+  transform: translateY(-50%);
+  font-size: 14.3px;
+  color: white;
+  line-height: 24px;
+  margin: 0;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.live-virtual-classes .price-comparison {
+  position: absolute;
+  left: 12px;
+  top: 48.79px;
+  height: 26.4px;
+  width: calc(100% - 24px);
+}
+
+.live-virtual-classes .price-strike-through {
+  position: absolute;
+  left: 0;
+  top: 13.41px;
+  transform: translateY(-50%);
+  font-size: 13.1px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: line-through;
+  text-decoration-skip-ink: none;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.live-virtual-classes .price-actual {
+  position: absolute;
+  left: 52.1px;
+  top: 11.61px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.live-virtual-classes .sale-ends-text {
+  position: absolute;
+  left: 12px;
+  top: 86.7px;
+  transform: translateY(-50%);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  line-height: 13px;
+  width: 97.58px;
+  white-space: pre-wrap;
+  font-weight: 400;
+}
+
+/* Enroll Section */
+.live-virtual-classes .batch-enroll-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 170px;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.live-virtual-classes .btn-enroll-new {
+  width: 170px;
+  height: 43.41px;
+  background: linear-gradient(180deg, rgb(154, 174, 211) 0%, rgb(91, 137, 179) 100%);
+  color: #dbebff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.live-virtual-classes .btn-enroll-new:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.live-virtual-classes .enroll-arrow {
+  width: 24px;
+  height: 24px;
+  transform: scaleX(-1);
+  flex-shrink: 0;
+}
+
+.live-virtual-classes .selling-fast-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 24.68px;
+}
+
+.live-virtual-classes .selling-fast-icon {
+  width: 24px;
+  height: 24px;
+  transform: scaleY(-1);
+}
+
+.live-virtual-classes .selling-fast-badge span {
+  font-size: 12px;
+  color: #a94442;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.live-virtual-classes .batches-note {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 30px;
+}
+
+/* Schedule Section */
+.live-virtual-classes .schedule-section {
+  padding: 10px;
+  background: #5B89B3;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.live-virtual-classes .schedule-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  border-radius: 24px 24px 0 0;
+}
+
+.live-virtual-classes .schedule-section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  margin: 0;
+}
+
+.live-virtual-classes .schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+  height: 204px;
+}
+
+.live-virtual-classes .schedule-card {
+  background: white;
+  border: 2px solid rgba(154, 174, 211, 0.25);
+  border-radius: 14px;
+  padding: 2px;
+  position: relative;
+  height: 100%;
+}
+
+.live-virtual-classes .schedule-card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.live-virtual-classes .schedule-badge {
+  position: absolute;
+  left: 24px;
+  top: 26px;
+  background: #5b89b3;
+  color: white;
+  padding: 3px 9px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.live-virtual-classes .schedule-title {
+  position: absolute;
+  left: 24px;
+  top: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0b1f3b;
+  line-height: 28px;
+  margin: 0;
+  height: 28px;
+}
+
+.live-virtual-classes .schedule-topics {
+  position: absolute;
+  left: 24px;
+  top: 100px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 208px;
+  height: 76px;
+}
+
+.live-virtual-classes .schedule-topic-item {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.live-virtual-classes .schedule-topic-icon {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.live-virtual-classes .schedule-topic-text {
+  position: absolute;
+  left: 24px;
+  top: 3px;
+  font-size: 14px;
+  color: rgba(11, 31, 59, 0.75);
+  line-height: 20px;
+  font-weight: 400;
+}
+
+/* Stats Section - Combined with Training Schedule */
+.live-virtual-classes .stats-section-combined {
+  padding: 32px;
+  border-radius: 16px;
+  background: linear-gradient(0deg, #1F3A5F 0%, #1F3A5F 100%), linear-gradient(142deg, #1F3A5F 28.29%, #0B1F3B 99.67%), linear-gradient(180deg, #1E40AF 0%, #1E3A8A 100%);
+  max-width: 87%;
+  margin: auto;
+}
+
+.live-virtual-classes .stats-grid-combined {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  height: 72px;
+}
+
+.live-virtual-classes .stat-item-combined {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.live-virtual-classes .stat-value-combined {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  line-height: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.live-virtual-classes .stat-label-combined {
+  font-size: 16px;
+  color: #c2ddff;
+  font-weight: 500;
+  line-height: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+
+/* FAQs Section */
+.live-virtual-classes .faqs-section-live {
+  padding: 80px 0;
+  background: rgba(91, 137, 179, 0.1);
+}
+
+.live-virtual-classes .faqs-section-live .container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.live-virtual-classes .faqs-list {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.live-virtual-classes .faq-item-live {
+  margin-bottom: 0;
+  background: white;
+  border: 2px solid rgba(154, 174, 211, 0.25);
+  border-bottom: none;
+  border-radius: 10px;
+}
+
+.live-virtual-classes .faq-item-live:not(:last-child) {
+  border-bottom: none;
+}
+
+.live-virtual-classes .faq-item-live:last-child {
+  border-bottom: 2px solid rgba(154, 174, 211, 0.25);
+}
+
+.live-virtual-classes .faq-question-live {
+  width: 100%;
+  padding: 24px 26px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: #0b1f3b;
+  transition: background 0.3s ease;
+  margin: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.live-virtual-classes .faq-question-live:hover {
+  background: #f8f9fa;
+}
+
+.live-virtual-classes .question-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.live-virtual-classes .question-content span {
+  flex: 1;
+  min-width: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.live-virtual-classes .question-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.live-virtual-classes .faq-chevron {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.live-virtual-classes .faq-item-live.active .faq-chevron,
+.live-virtual-classes .faq-chevron.rotate {
+  transform: rotate(180deg);
+}
+
+.live-virtual-classes .faq-answer-live {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 26px;
+  background: white;
+  border: 2px solid rgba(154, 174, 211, 0.25);
+  border-top: none;
+  border-left: 2px solid rgba(154, 174, 211, 0.25);
+  border-right: 2px solid rgba(154, 174, 211, 0.25);
+  border-bottom: 2px solid rgba(154, 174, 211, 0.25);
+  border-radius: 0 0 10px 10px;
+}
+
+.live-virtual-classes .faq-item-live.active .faq-answer-live {
+  max-height: 500px;
+  padding: 0 26px 24px 70px;
+}
+
+.live-virtual-classes .faq-answer-live p {
+  font-size: 16px;
+  color: #364153;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.live-virtual-classes .answer-content-live {
+  font-size: 16px;
+  color: #364153;
+  line-height: 1.6;
+  padding: 24px 0;
+}
+
+/* CTA Section */
+/* Contact Form Section */
+.live-virtual-classes .contact-form-section {
+  position: relative;
+  padding: 80px 0;
+  background: linear-gradient(0deg, rgb(154, 174, 211) 0%, rgb(91, 137, 179) 100%);
+  overflow: hidden;
+}
+
+.live-virtual-classes .contact-form-background {
+  position: absolute;
+  left: -111px;
+  top: 0;
+  width: 1662px;
+  height: 789px;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.live-virtual-classes .contact-form-background::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 384px;
+  height: 384px;
+  background: white;
+  border-radius: 50%;
+  filter: blur(64px);
+}
+
+.live-virtual-classes .contact-form-background::after {
+  content: '';
+  position: absolute;
+  left: 1278px;
+  top: 405px;
+  width: 384px;
+  height: 384px;
+  background: white;
+  border-radius: 50%;
+  filter: blur(64px);
+}
+
+.live-virtual-classes .contact-form-container {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 100px;
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+/* Left Side - Contact Cards */
+.live-virtual-classes .contact-form-left {
+  width: 457.594px;
+  flex-shrink: 0;
+}
+
+.live-virtual-classes .contact-form-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  color: white;
+  margin-bottom: 16px;
+}
+.pt-0{
+  padding-top: 0px !important
+}
+.live-virtual-classes .contact-form-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32.5px;
+  color: white;
+  margin-bottom: 50px;
+  width: 406px;
+}
+
+.live-virtual-classes .contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.live-virtual-classes .contact-card {
+  background: #E0F2FE;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 14px;
+  padding: 17px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  height: 102px;
+}
+
+.live-virtual-classes .contact-card-location {
+  height: 98px;
+}
+
+.live-virtual-classes .contact-card-icon {
+  width: 48px;
+  height: 48px;
+  background: #9aaed3;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.live-virtual-classes .contact-card-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.live-virtual-classes .contact-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.live-virtual-classes .contact-card-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #0b1f3b;
+  margin: 0;
+}
+
+.live-virtual-classes .contact-card-value {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #0b1f3b;
+  margin: 0;
+}
+
+.live-virtual-classes .contact-card-subtext {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #0b1f3b;
+  margin: 0;
+}
+
+.live-virtual-classes .contact-card-address {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #0b1f3b;
+  margin: 0;
+}
+
+/* Right Side - Form */
+.live-virtual-classes .contact-form-right {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  width: 710.406px;
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
+
+.live-virtual-classes .contact-form-header {
+  margin-bottom: 32px;
+}
+
+.live-virtual-classes .contact-form-heading {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #0b1f3b;
+  margin-bottom: 8px;
+}
+
+.live-virtual-classes .contact-form-description {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(11, 31, 59, 0.75);
+  margin: 0;
+}
+
+.live-virtual-classes .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.live-virtual-classes .form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.live-virtual-classes .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.live-virtual-classes .form-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #0b1f3b;
+}
+
+.live-virtual-classes .form-input {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #0b1f3b;
+  background: white;
+  border: 1px solid rgba(96, 165, 250, 0.5);
+  border-radius: 8px;
+  padding: 12px;
+  height: 48px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.live-virtual-classes .form-input::placeholder {
+  color: #0b1f3b;
+  opacity: 0.5;
+}
+
+.live-virtual-classes .form-input:focus {
+  outline: none;
+  border-color: rgba(96, 165, 250, 0.8);
+}
+
+.live-virtual-classes .form-input:not(:placeholder-shown) {
+  opacity: 1;
+}
+
+.live-virtual-classes .form-submit-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.live-virtual-classes .contact-form-button {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #dbebff;
+  background: linear-gradient(180deg, rgb(154, 174, 211) 0%, rgb(91, 137, 179) 100%);
+  border: none;
+  border-radius: 8px;
+  height: 48px;
+  padding: 0 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1), 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.live-virtual-classes .contact-form-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.live-virtual-classes .contact-form-button .button-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.live-virtual-classes .form-privacy-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(11, 31, 59, 0.75);
+  text-align: center;
+  margin: 0;
+}
+
+.live-virtual-classes .contact-form-footer {
+  border-top: 1px solid #f3f4f6;
+  padding-top: 25px;
+  margin-top: 25px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.live-virtual-classes .footer-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.live-virtual-classes .footer-item img {
+  width: 16px;
+  height: 16px;
+}
+
+.live-virtual-classes .footer-item span {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(11, 31, 59, 0.75);
+}
+
+
+  /* Smooth transitions for section titles */
+  .live-virtual-classes .section-title {
+    font-size: clamp(40px, 2.5vw, 48px);
+  }
+
+  .live-virtual-classes .section-subtitle {
+    font-size: clamp(20px, 1.25vw, 24px);
+    max-width: clamp(669px, 41.8vw, 800px);
+  }
+
+
+.live-virtual-classes .section-header-about {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.live-virtual-classes .section-title-about {
+  text-align: left;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 31px;
+  color: #1f3a5f;
+  font-weight: 700;
+}
+
+.live-virtual-classes .section-subtitle-about {
+  text-align: left;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+  color: #0b1f3b;
+}
+
+
+
+/* 1920px Breakpoint - Larger Desktop Layout */
+@media (min-width: 1920px) {
+  /* Hero Section - Wider container and spacing */
+  .live-virtual-classes .hero-container {
+    max-width: 1920px;
+    padding: 0 clamp(100px, 6.25vw, 120px);
+    gap: clamp(60px, 3.75vw, 72px);
+  }
+
+  .live-virtual-classes .hero-content {
+    max-width: clamp(697px, 43.8vw, 842px);
+  }
+
+  .live-virtual-classes .hero-image img {
+    max-width: clamp(350px, 23.1vw, 444px);
+  }
+
+  .live-virtual-classes .hero-title {
+    font-size: clamp(48px, 3vw, 56px);
+  }
+
+  .live-virtual-classes .hero-subtitle {
+    font-size: clamp(40px, 2.5vw, 48px);
+  }
+
+  /* Container - Wider max-width */
+  .live-virtual-classes .container {
+    max-width: 1680px;
+    padding: 0 clamp(100px, 6.25vw, 120px) !important;
+  }
+
+  /* About Section - Split layout for 1920px */
+  .live-virtual-classes .about-section .container {
+    grid-template-columns: clamp(450px, 34.8vw, 668px) 1fr;
+    gap: clamp(75px, 5.2vw, 100px);
+    max-width: 1680px;
+    padding: 0 clamp(100px, 6.25vw, 120px);
+  }
+
+  .live-virtual-classes .about-cards {
+    max-width: clamp(715px, 43.75vw, 840px);
+    gap: clamp(16px, 1vw, 20px);
+  }
+
+  .live-virtual-classes .about-card {
+    padding: clamp(25px, 1.56vw, 30px);
+  }
+
+  /* Target Audience Section - Wider container */
+  .live-virtual-classes .target-audience-section .container {
+    max-width: 1680px;
+    padding: 0 clamp(100px, 6.25vw, 120px);
+  }
+
+  .live-virtual-classes .audience-grid {
+    gap: clamp(24px, 1.5vw, 28px);
+  }
+
+  .live-virtual-classes .audience-card {
+    padding: clamp(26px, 1.625vw, 30px);
+  }
+
+  /* Batches Section - Wider container */
+  .live-virtual-classes .batches-section .container {
+    max-width: 1680px;
+    padding: 0 clamp(100px, 6.25vw, 120px);
+  }
+
+
+  /* FAQs Section - Centered container */
+  .live-virtual-classes .faqs-section-live .container {
+    max-width: clamp(1240px, 64.6vw, 1240px);
+    padding: 0 clamp(100px, 6.25vw, 120px);
+  }
+}
+
+/* Responsive Design - Ensure 1920px design is preserved */
+@media (min-width: 1920px) and (max-width: 1919px) {
+  /* Lock 1920px design values - prevent 1920px styles from leaking */
+  .live-virtual-classes .hero-container {
+    max-width: 1920px;
+    padding: 0 100px;
+    gap: 60px;
+  }
+
+  .live-virtual-classes .hero-content {
+    max-width: 697px;
+  }
+
+  .live-virtual-classes .hero-image img {
+    max-width: 350px;
+  }
+
+  .live-virtual-classes .hero-title {
+    font-size: 48px;
+  }
+
+  .live-virtual-classes .hero-subtitle {
+    font-size: 40px;
+  }
+
+  .live-virtual-classes .container {
+    max-width: 100%;
+    padding: 0 100px !important;
+  }
+
+  .live-virtual-classes .about-section .container {
+    max-width: 1920px;
+    padding: 0 100px !important;
+    grid-template-columns: 450px 1fr;
+    gap: 75px;
+  }
+
+  .live-virtual-classes .about-cards {
+    max-width: 715px;
+    gap: 16px;
+  }
+
+  .live-virtual-classes .about-card {
+    padding: 25px;
+  }
+
+  .live-virtual-classes .target-audience-section .container {
+    padding: 0 144px !important;
+  }
+
+  .live-virtual-classes .audience-grid {
+    gap: 24px;
+  }
+
+  .live-virtual-classes .audience-card {
+    padding: 26px;
+  }
+
+  .live-virtual-classes .batches-section .container {
+    max-width: 1920px;
+    padding: 0 100px !important;
+  }
+
+  .live-virtual-classes .section-title {
+    font-size: 40px;
+  }
+
+  .live-virtual-classes .section-subtitle {
+    font-size: 20px;
+    max-width: 669px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .live-virtual-classes .hero-container,
+  .live-virtual-classes .container {
+    padding: 0 16px !important;
+  }
+
+  .live-virtual-classes .batch-card-row {
+    padding: 12px 16px;
+    height: auto;
+    min-height: 100px;
+    gap: 8px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .live-virtual-classes .batch-date-section {
+    min-width: 90px;
+    flex: 0 1 auto;
+  }
+
+  .live-virtual-classes .batch-date {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .live-virtual-classes .class-details-link {
+    font-size: 11px;
+  }
+
+  .live-virtual-classes .batch-class-type,
+  .live-virtual-classes .batch-time {
+    min-width: 0;
+    flex: 1 1 0;
+    margin-left: 0;
+    font-size: 13px;
+    gap: 4px;
+  }
+
+  .live-virtual-classes .batch-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  .live-virtual-classes .batch-price-normal {
+    min-width: 80px;
+    flex: 0 1 auto;
+    margin-left: 0;
+    font-size: 14px;
+    text-align: right;
+  }
+
+  .live-virtual-classes .batch-price-flash-sale {
+    margin-left: 0;
+    transform: scale(0.7);
+    transform-origin: right center;
+    width: 140px;
+    flex: 0 0 auto;
+  }
+
+  .live-virtual-classes .batch-enroll-section {
+    width: 110px;
+    flex: 0 0 auto;
+    margin-left: 0;
+  }
+
+  .live-virtual-classes .btn-enroll-new {
+    width: 110px;
+    font-size: 13px;
+    height: 34px;
+    gap: 2px;
+  }
+
+  .live-virtual-classes .enroll-arrow {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .live-virtual-classes .selling-fast-badge span {
+    font-size: 9px;
+  }
+  .live-virtual-classes .about-cards,
+  .live-virtual-classes .audience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .live-virtual-classes .schedule-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .live-virtual-classes .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 991px) {
+}
+
+/* Mobile Styles - Based on Figma Design (375px) - Updated to match 3074-8055 */
+@media (max-width: 767px) {
+  /* Hero Section Mobile - 708px height per Figma */
+  .live-virtual-classes .hero-section {
+    min-height: 708px;
+    padding: 0;
+    background: linear-gradient(124.29627444664204deg, rgb(31, 58, 95) 28.291%, rgb(11, 31, 59) 99.666%);
+  }
+
+  .live-virtual-classes .hero-container {
+    padding: 16px !important;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    min-height: 708px;
+  }
+
+  .live-virtual-classes .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .live-virtual-classes .hero-badge {
+    font-size: 12px;
+    padding: 4px 13px;
+    height: 30px;
+    margin-bottom: 24px;
+  }
+
+  .live-virtual-classes .hero-title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .live-virtual-classes .hero-subtitle {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .live-virtual-classes .hero-description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .live-virtual-classes .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .live-virtual-classes .btn {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    justify-content: center;
+  }
+
+  .live-virtual-classes .btn-secondary {
+    height: 52px;
+    border-width: 1px;
+  }
+
+  .live-virtual-classes .hero-right-image-wrapper {
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  /* About Section Mobile */
+  .live-virtual-classes .about-section {
+    padding: 40px 0;
+  }
+
+  .live-virtual-classes .about-section .container {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0 16px !important;
+  }
+
+  .live-virtual-classes .about-section .section-header {
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 0 16px;
+  }
+
+  .live-virtual-classes .about-section .section-title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  .live-virtual-classes .about-section .section-subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .live-virtual-classes .about-cards {
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    max-width: 100%;
+  }
+
+  .live-virtual-classes .about-card {
+    background: rgba(154, 174, 211, 0.1);
+    border: 1px solid rgba(154, 174, 211, 0.25);
+    border-radius: 14px;
+    padding: 25px;
+    gap: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .live-virtual-classes .card-icon-bg {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+  }
+
+  .live-virtual-classes .card-icon-bg img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .live-virtual-classes .card-title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 8px;
+  }
+
+  .live-virtual-classes .card-description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  /* Target Audience Section Mobile - Based on Figma Design (3026-12598) */
+  .live-virtual-classes .target-audience-section {
+    padding: 64px 0;
+    background: linear-gradient(to bottom, rgba(194, 221, 255, 0.15), rgba(194, 221, 255, 0.5));
+  }
+
+  .live-virtual-classes .target-audience-section .container {
+    padding: 0 16px !important;
+  }
+
+  .live-virtual-classes .target-audience-section .section-header {
+    margin-bottom: 48px;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .live-virtual-classes .target-audience-section .section-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 28px;
+    text-align: center;
+    color: #1f3a5f;
+  }
+
+  .live-virtual-classes .target-audience-section .section-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    color: #0b1f3b;
+  }
+
+  .live-virtual-classes .audience-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 16px;
+    justify-content: flex-start;
+  }
+
+  .live-virtual-classes .audience-card {
+    background: white;
+    border: 2px solid rgba(154, 174, 211, 0.25);
+    border-radius: 14px;
+    width: calc(100% - 0px);
+    min-width: 0;
+    padding: 42px 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .live-virtual-classes .audience-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 0;
+    background: rgba(194, 221, 255, 0.5);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .live-virtual-classes .audience-icon img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .live-virtual-classes .audience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .live-virtual-classes .audience-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0;
+    text-align: center;
+    color: #1f3a5f;
+  }
+
+  .live-virtual-classes .audience-description {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    color: #0b1f3b;
+    opacity: 0.75;
+    margin: 0;
+  }
+
+  /* Batches Section Mobile - Based on Figma Design (3026-12123) */
+  .live-virtual-classes .batches-section {
+    padding: 40px 0;
+    background: linear-gradient(to bottom, rgba(154, 174, 211, 0) 0%, rgba(154, 174, 211, 0.1) 100%);
+  }
+
+  .live-virtual-classes .batches-section .container {
+    padding: 0 16px !important;
+  }
+
+  .live-virtual-classes .batches-section .section-header {
+    margin-bottom: 48px;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .live-virtual-classes .batches-section .section-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 28px;
+    text-align: center;
+    color: #1f3a5f;
+  }
+
+  .live-virtual-classes .batches-section .section-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    color: #0b1f3b;
+  }
+
+  .live-virtual-classes .batches-filter-options {
+    display: none; /* Hide timezone and enrollment links on mobile per Figma */
+  }
+
+  .live-virtual-classes .batches-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .live-virtual-classes .batches-list {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 24px;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Pagination Dots - Mobile Only */
+  .live-virtual-classes .batches-pagination-dots {
+    display: flex !important;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    height: 8px;
+    width: 153.143px;
+    margin-top: 16px;
+  }
+
+  .live-virtual-classes .pagination-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    background: rgba(194, 221, 255, 0.5);
+    flex-shrink: 0;
+  }
+
+  .live-virtual-classes .pagination-dot.active {
+    width: 57.143px;
+    height: 8px;
+    background: #c2ddff;
+  }
+
+  .live-virtual-classes .batch-card-row {
+    flex-direction: column;
+    height: auto;
+    padding: 23px 28px;
+    gap: 24px;
+    background: rgba(91, 137, 179, 0.05);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .live-virtual-classes .batch-card-row.batch-card-alt {
+    height: auto;
+  }
+
+  .live-virtual-classes .batch-date-section {
+    min-width: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+
+  .live-virtual-classes .batch-date {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    color: #1f3a5f;
+  }
+
+  .live-virtual-classes .class-details-link {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14.4px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #005873;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .live-virtual-classes .class-details-arrow {
+    width: 24px;
+    height: 24px;
+  }
+
+  .live-virtual-classes .batch-class-type,
+  .live-virtual-classes .batch-time {
+    min-width: auto;
+    width: 100%;
+    gap: 6px;
+    display: flex;
+    align-items: center;
+  }
+
+  .live-virtual-classes .batch-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .live-virtual-classes .batch-class-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #0b1f3b;
+  }
+
+  .live-virtual-classes .batch-time {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #0b1f3b;
+  }
+
+  .live-virtual-classes .batch-price-normal {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18.7px;
+    font-weight: 700;
+    line-height: 24px;
+    min-width: auto;
+    width: 100%;
+    color: #0b1f3b;
+  }
+
+  .live-virtual-classes .batch-price-flash-sale {
+    max-width: 203px;
+    height: 103px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .live-virtual-classes .batch-enroll-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .live-virtual-classes .btn-enroll-new {
+    width: 100%;
+    height: 43.41px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #dbebff;
+    background: linear-gradient(180deg, rgb(154, 174, 211) 0%, rgb(91, 137, 179) 100%);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  .live-virtual-classes .enroll-arrow {
+    width: 24px;
+    height: 24px;
+  }
+
+  .live-virtual-classes .selling-fast-badge {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: auto;
+    justify-content: center;
+  }
+
+  .live-virtual-classes .selling-fast-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .live-virtual-classes .selling-fast-badge span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+    color: #a94442;
+    line-height: 24px;
+  }
+
+  /* Schedule Section Mobile */
+  /* 4-Week Training Schedule Section Mobile - Based on Figma Design (3071-9886) */
+  .live-virtual-classes .schedule-section {
+    padding: 40px 0;
+    background: #5b89b3;
+    margin-top: 0 !important;
+  }
+
+  .live-virtual-classes .schedule-container {
+    padding: 0 16px;
+    gap: 0;
+  }
+
+  .live-virtual-classes .schedule-section-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+    padding: 0 16px;
+  }
+
+  .live-virtual-classes .schedule-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    padding: 0 16px;
+    margin-top: 0;
+  }
+
+  .live-virtual-classes .schedule-card {
+    background: white;
+    border: 2px solid rgba(154, 174, 211, 0.25);
+    border-radius: 16px;
+    height: 280px;
+    padding: 10px;
+    position: relative;
+  }
+
+  .live-virtual-classes .schedule-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    height: 100%;
+  }
+
+  .live-virtual-classes .schedule-badge {
+    background: #5b89b3;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 9px 21px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    position: static;
+    height: auto;
+    left: auto;
+    top: auto;
+    white-space: nowrap;
+  }
+
+  .live-virtual-classes .schedule-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #0b1f3b;
+    margin: 0;
+    position: static;
+    left: auto;
+    top: auto;
+    height: auto;
+    padding: 5px 0;
+  }
+
+  .live-virtual-classes .schedule-topics {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    position: static;
+    left: auto;
+    top: auto;
+  }
+
+  .live-virtual-classes .schedule-topic-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: auto;
+    width: 100%;
+    position: static;
+    padding: 2px 0;
+  }
+
+  .live-virtual-classes .schedule-topic-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    position: static;
+    left: auto;
+    top: auto;
+  }
+
+  .live-virtual-classes .schedule-topic-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(11, 31, 59, 0.75);
+    position: static;
+    left: auto;
+    top: auto;
+  }
+
+  /* Stats Section Mobile */
+  .live-virtual-classes .stats-section-combined {
+    margin-top: 16px;
+    max-width: 76%;
+  }
+
+  .live-virtual-classes .stats-grid-combined {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    height: auto;
+  }
+
+  .live-virtual-classes .stat-item-combined {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .live-virtual-classes .stat-value-combined {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    padding: 4px 0;
+  }
+
+  .live-virtual-classes .stat-label-combined {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #c2ddff;
+    text-align: center;
+    padding: 4px 0;
+  }
+
+  /* FAQs Section Mobile */
+  /* FAQs Section Mobile - Based on Figma Design (3028-12925) */
+  .live-virtual-classes .faqs-section-live {
+    padding: 40px 0;
+    background: rgba(91, 137, 179, 0.1);
+  }
+
+  .live-virtual-classes .faqs-section-live .container {
+    padding: 0 16px !important;
+  }
+
+  .live-virtual-classes .faqs-section-live .section-header {
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .live-virtual-classes .faqs-section-live .section-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #1f3a5f;
+    margin: 0;
+    text-align: center;
+  }
+
+  .live-virtual-classes .faqs-section-live .section-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #0b1f3b;
+    margin: 0;
+    text-align: center;
+  }
+
+  .live-virtual-classes .faqs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .live-virtual-classes .faq-item-live {
+    background: white;
+    border: 2px solid rgba(154, 174, 211, 0.25);
+    border-bottom: none;
+    border-radius: 10px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .live-virtual-classes .faq-item-live:last-child {
+    border-bottom: 2px solid rgba(154, 174, 211, 0.25);
+  }
+
+  .live-virtual-classes .faq-question-live {
+    padding: 16px 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0b1f3b;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    background: transparent;
+    border: none;
+    text-align: left;
+  }
+
+  .live-virtual-classes .question-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .live-virtual-classes .question-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .live-virtual-classes .question-content span {
+    flex: 1;
+    min-width: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .live-virtual-classes .faq-chevron {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .live-virtual-classes .faq-item-live.active .faq-answer-live {
+    padding: 0 24px 16px 70px;
+  }
+
+  .live-virtual-classes .faq-answer-live {
+    border-top: none;
+    border-left: 2px solid rgba(154, 174, 211, 0.25);
+    border-right: 2px solid rgba(154, 174, 211, 0.25);
+    border-bottom: 2px solid rgba(154, 174, 211, 0.25);
+    border-radius: 0 0 10px 10px;
+  }
+
+  .live-virtual-classes .faq-answer-live p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #364153;
+    margin: 0;
+  }
+
+  /* Container Padding Mobile */
+  .live-virtual-classes .container {
+    padding: 0 16px !important;
+  }
+}

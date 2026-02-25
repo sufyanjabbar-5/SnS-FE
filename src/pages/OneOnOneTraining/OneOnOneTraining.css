@@ -1,0 +1,673 @@
+/* Scoped styles - All styles are prefixed with .one-on-one-training to prevent affecting other components */
+.one-on-one-training {
+  width: 100%;
+}
+
+
+.one-on-one-training .btn {
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.one-on-one-training .btn-primary {
+  background: linear-gradient(180deg, rgb(254, 196, 77) 0%, rgb(250, 135, 55) 100%);
+  color: #0b1f3b;
+  font-weight: 600;
+}
+
+.one-on-one-training .btn-primary:hover {
+  background: linear-gradient(180deg, rgb(250, 180, 65) 0%, rgb(245, 120, 45) 100%);
+  transform: translateY(-2px);
+}
+
+.one-on-one-training .btn-secondary {
+  background: transparent;
+  color: #c2ddff;
+  border: 1px solid #c2ddff;
+}
+
+.one-on-one-training .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Perfect For Banner */
+.one-on-one-training .perfect-for-banner {
+  background: rgba(96, 165, 250, 0.25);
+  border: 1px solid rgba(31, 58, 95, 0.15);
+  border-radius: 16px;
+  padding: 25px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  height: 97px;
+  margin-top: 20px;
+}
+
+/* Certification Cards - Base Styles */
+.one-on-one-training section:nth-of-type(6) .grid-cols-2 > div:not(:last-child) {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+}
+
+/* Certification Cards - Center content vertically for tablets (768px - 1300px) */
+@media (min-width: 768px) and (max-width: 1300px) {
+  .one-on-one-training section:nth-of-type(6) .grid-cols-2 > div:not(:last-child) {
+    align-items: center !important;
+  }
+}
+
+.one-on-one-training section:nth-of-type(6) .grid-cols-2 > div:not(:last-child) img {
+  flex-shrink: 0 !important;
+  object-fit: cover !important;
+}
+
+.one-on-one-training section:nth-of-type(6) .grid-cols-2 > div:not(:last-child) .flex-1 {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  gap: 8px !important;
+  min-width: 0 !important;
+  flex: 1 !important;
+  overflow: hidden !important;
+}
+
+.one-on-one-training section:nth-of-type(6) .grid-cols-2 > div:not(:last-child) h3 {
+  margin: 0 !important;
+  word-wrap: normal !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  white-space: normal !important;
+  line-height: 1.4 !important;
+}
+
+.one-on-one-training section:nth-of-type(6) .grid-cols-2 > div:not(:last-child) p {
+  margin: 0 !important;
+  word-wrap: normal !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  white-space: normal !important;
+  line-height: 1.5 !important;
+}
+
+.one-on-one-training section:nth-of-type(6) .grid-cols-2 > div:not(:last-child) span {
+  display: inline-block !important;
+  margin-bottom: 8px !important;
+  width: auto !important;
+  max-width: fit-content !important;
+}
+
+.one-on-one-training .perfect-for-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.one-on-one-training .perfect-for-icon img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.one-on-one-training .perfect-for-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.one-on-one-training .perfect-for-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #101828;
+}
+
+.one-on-one-training .perfect-for-description {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22.75px;
+  color: #1f3a5f;
+}
+
+/* 1920px Web Design - Based on Figma */
+@media (min-width: 1920px) {
+  /* Container max-width adjustments */
+  .one-on-one-training [class*="max-w-\[1920px\]"] {
+    max-width: 1680px !important;
+    padding-left: 120px !important;
+    padding-right: 120px !important;
+  }
+
+  /* Hero Section - 550px height */
+  .one-on-one-training section:first-of-type {
+    min-height: 550px;
+  }
+
+  /* Fix button overlap in hero section on large screens */
+  .one-on-one-training section:first-of-type .flex.flex-col.justify-center {
+    position: relative !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .one-on-one-training section:first-of-type .flex.flex-col.justify-center > div:first-child {
+    padding-bottom: 0 !important;
+    margin-bottom: 40px !important;
+  }
+
+  /* Fix absolutely positioned buttons container - target by attribute selector */
+  .one-on-one-training section:first-of-type [class*="absolute"][class*="bottom"] {
+    position: static !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+
+  /* Ensure buttons container doesn't overlap */
+  .one-on-one-training section:first-of-type .flex.flex-col[class*="sm:flex-row"] {
+    position: static !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+
+  /* Why Choose 1-on-1 Training Section */
+  .one-on-one-training section:nth-of-type(2) {
+    min-height: clamp(651px, 50vw, 803px);
+  }
+
+  .one-on-one-training .grid-cols-4 {
+    gap: clamp(20px, 1.5vw, 30px) !important;
+  }
+
+  .one-on-one-training .perfect-for-banner {
+    margin-top: clamp(20px, 1.5vw, 40px) !important;
+    padding: clamp(25px, 2vw, 35px) !important;
+  }
+
+  /* Leadership & Portfolio Lens Section */
+  .one-on-one-training section:nth-of-type(3) {
+    padding-top: clamp(80px, 6vw, 100px) !important;
+    padding-bottom: clamp(80px, 6vw, 100px) !important;
+  }
+
+  .one-on-one-training .grid-cols-2 {
+    gap: clamp(20px, 1.5vw, 30px) !important;
+  }
+
+  /* Why Leaders Choose This Approach Section */
+  .one-on-one-training section:nth-of-type(4) {
+    padding-top: clamp(80px, 6vw, 100px) !important;
+    padding-bottom: clamp(80px, 6vw, 100px) !important;
+  }
+
+  .one-on-one-training .grid-cols-3 {
+    gap: clamp(20px, 1.5vw, 30px) !important;
+  }
+
+  /* CTA Section */
+  .one-on-one-training section:nth-of-type(5) {
+    padding-top: clamp(80px, 6vw, 100px) !important;
+    padding-bottom: clamp(80px, 6vw, 100px) !important;
+  }
+
+  .one-on-one-training section:nth-of-type(5) [class*="max-w-\[1920px\]"] {
+    padding-left: clamp(100px, 8vw, 160px) !important;
+    padding-right: clamp(100px, 8vw, 160px) !important;
+  }
+
+  /* Certifications Section */
+  .one-on-one-training section:nth-of-type(6) {
+    padding-top: clamp(80px, 6vw, 100px) !important;
+    padding-bottom: clamp(80px, 6vw, 100px) !important;
+  }
+
+  /* General Section Spacing */
+  .one-on-one-training section {
+    padding-top: clamp(80px, 6vw, 100px) !important;
+    padding-bottom: clamp(80px, 6vw, 100px) !important;
+  }
+
+  /* Typography Scaling */
+  .one-on-one-training h2 {
+    font-size: clamp(40px, 3vw, 56px) !important;
+    line-height: clamp(40px, 3vw, 56px) !important;
+    margin-bottom: clamp(48px, 4vw, 60px) !important;
+  }
+
+  .one-on-one-training h3 {
+    font-size: clamp(20px, 1.5vw, 24px) !important;
+    line-height: clamp(24px, 2vw, 28px) !important;
+  }
+
+  .one-on-one-training p {
+    font-size: clamp(14px, 1vw, 20px) !important;
+    line-height: clamp(20px, 1.5vw, 28px) !important;
+  }
+
+  /* Card heights */
+  .one-on-one-training .h-\[220px\] {
+    height: clamp(220px, 17vw, 278px) !important;
+  }
+
+  .one-on-one-training .h-\[150px\] {
+    height: clamp(150px, 12vw, 200px) !important;
+  }
+}
+
+/* Tablet/Medium Screen Styles - Hero Section Buttons */
+@media (min-width: 1024px) and (max-width: 1379px) {
+  .one-on-one-training section:first-of-type .flex.flex-col[class*="sm:flex-row"] {
+    bottom: 34px !important;
+    position: absolute !important;
+  }
+  
+  .one-on-one-training section:first-of-type [class*="absolute"][class*="bottom"] {
+    bottom: 34px !important;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  /* Hero Section - Fix button overlap and mobile styling */
+  .one-on-one-training section:first-of-type {
+    min-height: 708px !important;
+    padding: 0 !important;
+  }
+
+  .one-on-one-training section:first-of-type .flex.flex-col.justify-center {
+    position: relative !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .one-on-one-training section:first-of-type .flex.flex-col.justify-center > div:first-child {
+    padding-bottom: 0 !important;
+    margin-bottom: 24px !important;
+  }
+
+  .one-on-one-training section:first-of-type [class*="absolute"][class*="bottom"] {
+    position: static !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+
+  .one-on-one-training section:first-of-type .flex.flex-col[class*="sm:flex-row"] {
+    position: static !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+
+  /* Container padding adjustments */
+  .one-on-one-training [class*="max-w-\[1920px\]"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .one-on-one-training [class*="px-\[100px\]"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .one-on-one-training [class*="px-\[160px\]"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Section padding */
+  .one-on-one-training section {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  /* Typography */
+  .one-on-one-training h2 {
+    font-size: 32px !important;
+    line-height: 40px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .one-on-one-training h3 {
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+
+  .one-on-one-training p {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  /* Why Choose 1-on-1 Training Section */
+  .one-on-one-training section:nth-of-type(2) {
+    min-height: auto !important;
+  }
+
+  .one-on-one-training section:nth-of-type(2) h2 {
+    font-size: 32px !important;
+    line-height: 40px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .one-on-one-training section:nth-of-type(2) p {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    max-width: 100% !important;
+  }
+
+  .one-on-one-training .grid-cols-4 {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .one-on-one-training .h-\[220px\] {
+    height: auto !important;
+    min-height: 200px !important;
+  }
+
+  /* Perfect For Banner */
+  .one-on-one-training .perfect-for-banner {
+    flex-direction: column;
+    height: auto !important;
+    padding: 20px !important;
+    gap: 16px !important;
+    margin-top: 24px !important;
+  }
+
+  .one-on-one-training .perfect-for-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .one-on-one-training .perfect-for-title {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .one-on-one-training .perfect-for-description {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+
+  /* Leadership & Portfolio Lens Section */
+  .one-on-one-training section:nth-of-type(3) {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .one-on-one-training section:nth-of-type(3) h2 {
+    font-size: 32px !important;
+    line-height: 40px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .one-on-one-training .grid-cols-2 {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .one-on-one-training section:nth-of-type(3) [style*="minHeight"] {
+    min-height: auto !important;
+  }
+
+  /* Why Leaders Choose This Approach Section */
+  .one-on-one-training section:nth-of-type(4) {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .one-on-one-training section:nth-of-type(4) h2 {
+    font-size: 32px !important;
+    line-height: 40px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .one-on-one-training section:nth-of-type(4) .grid-cols-2 {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .one-on-one-training section:nth-of-type(4) .grid-cols-3 {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* CTA Section */
+  .one-on-one-training section:nth-of-type(5) {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .one-on-one-training section:nth-of-type(5) [style*="height"] {
+    height: auto !important;
+    min-height: 400px !important;
+  }
+
+  .one-on-one-training section:nth-of-type(5) h2 {
+    font-size: 28px !important;
+    line-height: 36px !important;
+    margin-bottom: 16px !important;
+    max-width: 100% !important;
+  }
+
+  .one-on-one-training section:nth-of-type(5) p {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 24px !important;
+    max-width: 100% !important;
+  }
+
+  .one-on-one-training section:nth-of-type(5) [class*="px-12"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* CTA Section Buttons - Column direction on mobile */
+  .one-on-one-training section:nth-of-type(5) .flex.gap-4 {
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+
+  .one-on-one-training section:nth-of-type(5) .flex.gap-4 > a {
+    width: 100% !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    padding: 16px 24px !important;
+    font-size: 16px !important;
+  }
+
+  /* Certifications Section */
+  .one-on-one-training section:nth-of-type(6) {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .one-on-one-training section:nth-of-type(6) h2 {
+    font-size: 32px !important;
+    line-height: 40px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .one-on-one-training section:nth-of-type(6) p {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .one-on-one-training section:nth-of-type(6) .grid-cols-2 {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* Certification Cards - Adjust content alignment */
+  .one-on-one-training section:nth-of-type(6) .grid-cols-2 > div:not(:last-child) {
+    height: auto !important;
+    min-height: 150px !important;
+    align-items: flex-start !important;
+    padding: 20px !important;
+  }
+
+  .one-on-one-training section:nth-of-type(6) .grid-cols-2 > div:not(:last-child) img {
+    width: 80px !important;
+    height: 80px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .one-on-one-training section:nth-of-type(6) .grid-cols-2 > div:not(:last-child) .flex-1 {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    gap: 8px !important;
+    min-width: 0 !important;
+  }
+
+  .one-on-one-training section:nth-of-type(6) .grid-cols-2 > div:not(:last-child) h3 {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 4px !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .one-on-one-training section:nth-of-type(6) .grid-cols-2 > div:not(:last-child) p {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .one-on-one-training section:nth-of-type(6) .grid-cols-2 > div:not(:last-child) span {
+    font-size: 12px !important;
+    padding: 4px 8px !important;
+    margin-bottom: 8px !important;
+    width: auto !important;
+    max-width: fit-content !important;
+  }
+
+  /* General card adjustments */
+  .one-on-one-training .rounded-2xl {
+    padding: 20px !important;
+  }
+
+  .one-on-one-training .w-14 {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .one-on-one-training .w-12 {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .one-on-one-training .w-7 {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .one-on-one-training .w-6 {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .one-on-one-training .w-5 {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  /* Text size adjustments for mobile */
+  .one-on-one-training .text-\[40px\] {
+    font-size: 32px !important;
+    line-height: 40px !important;
+  }
+
+  .one-on-one-training .text-\[20px\] {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+
+  .one-on-one-training .text-\[14px\] {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .one-on-one-training .text-\[16px\] {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .one-on-one-training .text-\[28px\] {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  /* Button adjustments */
+  .one-on-one-training .btn {
+    padding: 12px 24px !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* Spacing adjustments */
+  .one-on-one-training .mb-12 {
+    margin-bottom: 24px !important;
+  }
+
+  .one-on-one-training .mb-10 {
+    margin-bottom: 20px !important;
+  }
+
+  .one-on-one-training .mb-8 {
+    margin-bottom: 16px !important;
+  }
+
+  .one-on-one-training .mb-7 {
+    margin-bottom: 16px !important;
+  }
+
+  .one-on-one-training .mb-6 {
+    margin-bottom: 16px !important;
+  }
+
+  .one-on-one-training .mb-4 {
+    margin-bottom: 12px !important;
+  }
+
+  .one-on-one-training .mb-2 {
+    margin-bottom: 8px !important;
+  }
+
+  .one-on-one-training .gap-5 {
+    gap: 16px !important;
+  }
+
+  .one-on-one-training .gap-4 {
+    gap: 12px !important;
+  }
+
+  .one-on-one-training .space-y-3 > * + * {
+    margin-top: 12px !important;
+  }
+}

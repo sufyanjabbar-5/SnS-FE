@@ -1,0 +1,94 @@
+.error-boundary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+}
+
+.error-boundary-content {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.error-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.error-boundary-content h1 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.error-boundary-content p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.error-details {
+  text-align: left;
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  max-height: 200px;
+  overflow: auto;
+}
+
+.error-details summary {
+  cursor: pointer;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.error-details pre {
+  font-size: 0.75rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0;
+  color: #e74c3c;
+}
+
+.error-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.error-actions button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.error-actions .btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+}
+
+.error-actions .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.error-actions .btn-secondary {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.error-actions .btn-secondary:hover {
+  background: #667eea;
+  color: white;
+}

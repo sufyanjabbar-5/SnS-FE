@@ -1,0 +1,235 @@
+.ready-start-section {
+  padding: 100px 0;
+  background-color: #799AB8; /* Blueish background as in the image */
+  color: white;
+}
+
+.ready-start-container {
+  max-width: 100% !important;
+  padding: 0 7% !important;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.ready-start-content {
+  flex: 1;
+}
+
+.rs-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.rs-subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.contact-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-card-item {
+  background: rgba(255, 255, 255, 0.2); /* Translucent white */
+  backdrop-filter: blur(5px);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.contact-card-item:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateX(10px);
+}
+
+.rs-icon-box {
+  width: 56px;
+  height: 56px;
+  background-color: #9eb6ce; /* Lighter blue for icon box */
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rs-card-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.rs-main-info {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 2px 0;
+}
+
+.rs-sub-info {
+  font-size: 13px;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* Right Side: Form Container */
+.ready-start-form-container {
+  flex: 1.2;
+}
+
+.rs-form-box {
+  background: white;
+  border-radius: 24px;
+  padding: 48px;
+  color: #1a202c;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.rs-form-box h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1F3A5F;
+  margin-bottom: 8px;
+}
+
+.rs-form-box p {
+  color: #718096;
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+
+.rs-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #1a202c;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.btn-rs-submit {
+  margin-top: 10px;
+  padding: 16px;
+  background: linear-gradient(135deg, #7a9cb8 0%, #5b89b3 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-rs-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.rs-security-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #718096;
+  margin-top: 8px;
+}
+
+.rs-form-badges {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #f0f4f8;
+  padding-top: 24px;
+}
+
+.rs-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.icon-green {
+  color: #10b981;
+}
+
+@media (max-width: 1024px) {
+  .ready-start-container {
+    flex-direction: column;
+    gap: 48px;
+  }
+  
+  .ready-start-content,
+  .ready-start-form-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .rs-title {
+    font-size: 32px;
+  }
+  
+  .rs-form-box {
+    padding: 30px 20px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+  }
+  
+  .rs-form-badges {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}

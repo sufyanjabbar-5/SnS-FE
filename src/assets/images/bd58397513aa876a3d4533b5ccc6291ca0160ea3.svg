@@ -1,0 +1,22 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-teac.svg" clip-path="url(#clip0_31_1506)">
+<path id="Vector" d="M50 0H0V50H50V0Z" fill="var(--fill-0, white)"/>
+<path id="Vector_2" d="M20.2086 48.305C28.5616 48.305 35.3331 41.6294 35.3331 33.3945C35.3331 25.1597 28.5616 18.484 20.2086 18.484C11.8555 18.484 5.08398 25.1597 5.08398 33.3945C5.08398 41.6294 11.8555 48.305 20.2086 48.305Z" fill="var(--fill-0, #00B6FF)" fill-opacity="0.171465"/>
+<path id="Vector_3" d="M40.7012 41.0601V27.1121" stroke="var(--stroke-0, #005873)" stroke-width="1.69492" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" fill-rule="evenodd" clip-rule="evenodd" d="M42.9947 6.34726C42.9947 7.62856 41.9689 9.41602 40.7006 9.41602C39.4339 9.41602 38.4081 7.62856 38.4081 6.34726C38.4081 5.06596 39.4339 4.02847 40.7006 4.02847C41.9689 4.02847 42.9947 5.06596 42.9947 6.34726Z" fill="var(--fill-0, #FFBC00)" stroke="var(--stroke-0, #005873)" stroke-width="1.69492" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M37.7341 41.0601L36.8269 24.568V18.491C36.8269 17.1744 36.0537 15.9789 34.8464 15.4324L27.1602 11.9483V10.8486H35.5383C36.7049 10.8486 37.6002 11.4102 38.3191 12.2695C39.406 13.5743 41.863 13.7374 42.5531 12.3838C42.7481 12.0038 45.0236 12.5285 45.0236 12.5285C45.0236 12.5285 46.0919 12.6865 45.6613 24.3511C45.6493 24.6672 44.5896 24.235 44.5777 24.568L43.6689 41.0601" stroke="var(--stroke-0, #005873)" stroke-width="1.69492" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M25.4395 4.19191V2.54236" stroke="var(--stroke-0, #005873)" stroke-width="1.69492" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M8.48438 27.6819V4.19141" stroke="var(--stroke-0, #005873)" stroke-width="1.69492" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_8" d="M33.9095 4.19189H6.7793" stroke="var(--stroke-0, #005873)" stroke-width="1.69492" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_9" d="M33.9095 27.7329H6.7793" stroke="var(--stroke-0, #005873)" stroke-width="1.69492" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_10" fill-rule="evenodd" clip-rule="evenodd" d="M28.4197 34.4384C28.4197 35.5566 27.4819 37.117 26.3273 37.117C25.1725 37.117 24.2365 35.5566 24.2365 34.4384C24.2365 33.3202 25.1725 32.4139 26.3273 32.4139C27.4819 32.4139 28.4197 33.3202 28.4197 34.4384Z" fill="var(--fill-0, #FFBC00)" stroke="var(--stroke-0, #005873)" stroke-width="1.69492" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_11" d="M31.9433 41.1381C32.0892 40.1243 31.2973 39.2179 30.2647 39.2179H28.4198C27.0022 40.6253 25.4592 40.6253 24.04 39.2179H22.3053C21.2744 39.2179 20.4809 40.1243 20.6267 41.1381" stroke="var(--stroke-0, #005873)" stroke-width="1.69492" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_12" fill-rule="evenodd" clip-rule="evenodd" d="M14.8548 34.4384C14.8548 35.5566 13.917 37.1171 12.7623 37.1171C11.6075 37.1171 10.6699 35.5566 10.6699 34.4384C10.6699 33.3202 11.6075 32.4139 12.7623 32.4139C13.917 32.4139 14.8548 33.3202 14.8548 34.4384Z" fill="var(--fill-0, #FFBC00)" stroke="var(--stroke-0, #005873)" stroke-width="1.69492" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_13" d="M18.3768 41.1381C18.5226 40.1242 17.7308 39.2179 16.6981 39.2179H14.8533C13.4358 40.6253 11.8927 40.6253 10.4735 39.2179H8.73881C7.70789 39.2179 6.91433 40.1242 7.06016 41.1381" stroke="var(--stroke-0, #005873)" stroke-width="1.69492" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_31_1506">
+<rect width="50" height="50" fill="white"/>
+</clipPath>
+</defs>
+</svg>

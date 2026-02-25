@@ -1,0 +1,27 @@
+.hero-default-gradient {
+  background: linear-gradient(165.69deg, #1f3a5f 28.291%, #0b1f3b 99.666%);
+}
+
+.hero-btn-primary {
+  background: linear-gradient(180deg, #fec44d 0%, #fa8737 100%) !important;
+  color: #0b1f3b !important;
+  border: none !important;
+}
+
+.hero-btn-primary:hover {
+  filter: brightness(1.05);
+}
+
+/* Custom styles for right element specifically for Home Slide 1 instructor */
+.hero-instructor-image-container {
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+/* Fix for mobile stacking image size */
+@media (max-width: 1024px) {
+    .hero-right-container {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+}

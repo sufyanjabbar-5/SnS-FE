@@ -1,0 +1,227 @@
+.student-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+.student-sidebar {
+  width: 260px;
+  background: #1e293b;
+  color: white;
+  transition: width 0.3s ease;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.student-sidebar.closed {
+  width: 70px;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #3b82f6;
+  cursor: pointer;
+}
+
+.sidebar-header .logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.sidebar-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sidebar-toggle-sidebar {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sidebar-toggle-sidebar:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.student-sidebar.closed .sidebar-toggle-sidebar {
+  margin: 0 auto;
+}
+
+.student-sidebar.closed .logo {
+  display: none;
+}
+
+.student-sidebar.closed .sidebar-header .logo .logo-img {
+  height: 35px;
+}
+
+.sidebar-nav {
+  padding: 20px 0;
+  flex: 1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-item i {
+  font-size: 20px;
+  min-width: 20px;
+}
+
+.nav-item:hover {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.nav-item.active {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+  border-left: 3px solid #3b82f6;
+}
+
+.sidebar-footer {
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-footer .user-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.sidebar-footer .user-avatar i {
+  font-size: 32px;
+  color: #3b82f6;
+}
+
+.sidebar-footer .user-info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sidebar-footer .user-name {
+  font-weight: 600;
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-footer .user-email {
+  font-size: 12px;
+  color: #cbd5e1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-footer .logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.sidebar-footer .logout-btn:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+.student-sidebar.closed .sidebar-footer .user-info,
+.student-sidebar.closed .sidebar-footer .logout-btn span {
+  display: none;
+}
+
+.student-main {
+  flex: 1;
+  margin-left: 260px;
+  transition: margin-left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.student-sidebar.closed + .student-main {
+  margin-left: 70px;
+}
+
+/* Removed .student-header styles per user request to eliminate unnecessary space */
+
+.student-content {
+  flex: 1;
+  padding: 16px 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .student-sidebar {
+    transform: translateX(-100%);
+  }
+
+  .student-sidebar.open {
+    transform: translateX(0);
+  }
+
+  .student-main {
+    margin-left: 0;
+  }
+
+  .student-sidebar.closed + .student-main {
+    margin-left: 0;
+  }
+
+  .sidebar-footer .user-info {
+    display: none;
+  }
+
+  .sidebar-footer .logout-btn span {
+    display: none;
+  }
+}

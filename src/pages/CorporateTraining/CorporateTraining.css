@@ -1,0 +1,1011 @@
+.corporate-training-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 473px;
+  overflow: hidden;
+}
+
+.hero-gradient-1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1920px;
+  height: 473px;
+  background: linear-gradient(180deg, #210350 0%, #11012e 100%);
+}
+
+.hero-gradient-2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1920px;
+  height: 473px;
+  background: linear-gradient(165.69deg, #1f3a5f 28.291%, #0b1f3b 99.666%);
+}
+
+.hero-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 18.8px 16.8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 240px;
+}
+
+.corporate-training .stats-icon {
+  width: 48px;
+  height: 48px;
+  background: #dbeafe;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.corporate-training .stats-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.corporate-training .stats-value {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f3a5f;
+  line-height: 32px;
+}
+
+.corporate-training .stats-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #0b1f3b;
+  line-height: 20px;
+}
+
+/* Hero Section */
+.corporate-training .corporate-hero-section {
+  padding: 80px 0;
+  background: linear-gradient(165.69deg, rgb(31, 58, 95) 28.291%, rgb(11, 31, 59) 99.666%);
+  min-height: 473px;
+  display: flex;
+  align-items: center;
+}
+
+.corporate-training .corporate-hero-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 100px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.corporate-training .corporate-hero-content {
+  flex: 1;
+  max-width: 560px;
+}
+
+.corporate-training .corporate-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 13px;
+  background: #c2ddff;
+  border: 1px solid rgba(194, 221, 255, 0.25);
+  border-radius: 33554400px;
+  margin-bottom: 30px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #364153;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.corporate-training .corporate-hero-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.corporate-training .corporate-hero-subtitle {
+  color: #ffffff;
+}
+
+.corporate-training .corporate-hero-description {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 32px;
+  opacity: 0.9;
+}
+
+.corporate-training .corporate-hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.corporate-training .corporate-btn {
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  transition: all 0.3s ease;
+}
+
+.corporate-training .corporate-btn-primary {
+  background: linear-gradient(180deg, rgb(254, 196, 77) 0%, rgb(250, 135, 55) 100%);
+  color: #0b1f3b;
+}
+
+.corporate-training .corporate-btn-secondary {
+  background: transparent;
+  color: #c2ddff;
+  border: 1px solid #c2ddff;
+}
+
+.corporate-training .corporate-hero-image {
+  flex: 1;
+  position: relative;
+  height: 500px;
+  min-height: 500px;
+}
+
+/* Corporate Training Session Component */
+.corporate-training .corporate-training-session {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.corporate-training .corporate-training-session-bg {
+  position: absolute;
+  top: -42.79%;
+  left: 0;
+  width: 100%;
+  height: 206.88%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.corporate-training .corporate-training-session-stat-card {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 16.8px;
+  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 240.1px;
+  height: 85.6px;
+  transform: translate(-50%, -50%);
+}
+
+.corporate-training .corporate-training-session-stat-card-1 {
+  left: calc(50% + 0.05px);
+  top: calc(50% - 177.2px);
+}
+
+.corporate-training .corporate-training-session-stat-card-2 {
+  left: calc(50% + 76.05px);
+  top: calc(50% - 108.2px);
+}
+
+.corporate-training .corporate-training-session-icon {
+  width: 48px;
+  height: 48px;
+  background: #dbeafe;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.corporate-training .corporate-training-session-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.corporate-training .corporate-training-session-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+}
+
+.corporate-training .corporate-training-session-value {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #1f3a5f;
+  margin-bottom: 0;
+}
+
+.corporate-training .corporate-training-session-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #0b1f3b;
+}
+
+/* A One-Stop Shop Section */
+.corporate-training .one-stop-shop-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.corporate-training .one-stop-shop-header {
+  display: flex;
+  gap: 74px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+.corporate-training .one-stop-shop-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #1f3a5f;
+  width: 450px;
+  flex-shrink: 0;
+}
+
+.corporate-training .one-stop-shop-description {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #0b1f3b;
+  flex: 1;
+}
+
+.corporate-training .one-stop-shop-description p {
+  margin: 0 0 8px 0;
+}
+
+.corporate-training .capability-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Show 3 cards per row when screen is less than 1920px */
+@media (max-width: 1439px) {
+  .corporate-training .capability-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.corporate-training .capability-card {
+  background: rgba(154, 174, 211, 0.1);
+  border: 1px solid rgba(154, 174, 211, 0.25);
+  border-radius: 14px;
+  padding: 33px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.corporate-training .capability-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.corporate-training .capability-icon-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.corporate-training .capability-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.corporate-training .capability-badge {
+  background: #60a5fa;
+  color: white;
+  padding: 3px 9px;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+  line-height: 16px;
+}
+
+.corporate-training .capability-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #1f3a5f;
+  margin: 0;
+}
+
+/* Who Is This Course For Section */
+.corporate-training .delivery-models-section {
+  padding: 80px 0;
+  background: linear-gradient(165.69deg, rgb(31, 58, 95) 28.291%, rgb(11, 31, 59) 99.666%);
+}
+
+.corporate-training .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.corporate-training .section-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #1f3a5f;
+  margin-bottom: 20px;
+}
+
+.corporate-training .delivery-models-section .section-title {
+  color: #ffffff;
+}
+
+.corporate-training .section-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #0b1f3b;
+  max-width: 598px;
+  margin: 0 auto;
+}
+
+.corporate-training .delivery-models-section .section-subtitle {
+  color: #ffffff;
+}
+
+.corporate-training .delivery-models-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.corporate-training .delivery-model-card {
+  background: white;
+  border: 1px solid rgba(154, 174, 211, 0.25);
+  border-radius: 16px;
+  padding: 0;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 337px;
+}
+
+.corporate-training .delivery-model-image {
+  width: 100%;
+  height: 213px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.corporate-training .delivery-model-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.corporate-training .delivery-model-content {
+  padding: 0 12px 12px 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.corporate-training .delivery-model-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #1f3a5f;
+  margin-bottom: 8px;
+  text-align: left;
+  letter-spacing: -1px;
+  padding-top: 12px;
+}
+
+.corporate-training .delivery-model-description {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(11, 31, 59, 0.75);
+  text-align: left;
+  margin: 0;
+}
+
+/* What Sets Us Apart Section */
+.corporate-training .what-sets-us-apart-section {
+  padding: 80px 0;
+  background: rgba(194, 221, 255, 0.15);
+  position: relative;
+}
+
+.corporate-training .what-sets-us-apart-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.corporate-training .what-sets-us-apart-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #1f3a5f;
+  margin-bottom: 84px;
+}
+
+.corporate-training .what-sets-us-apart-content {
+  display: flex;
+  gap: 60px;
+  position: relative;
+}
+
+.corporate-training .features-list {
+  flex: 1;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.corporate-training .feature-item {
+  display: flex;
+  gap: 16px;
+}
+
+.corporate-training .feature-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(194, 221, 255, 0.5);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.corporate-training .feature-content {
+  flex: 1;
+}
+
+.corporate-training .feature-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #1f3a5f;
+  margin-bottom: 8px;
+}
+
+.corporate-training .feature-description {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #0b1f3b;
+  margin: 0;
+}
+
+.corporate-training .stats-section {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 1136px;
+  height: 124px;
+  background: linear-gradient(170.48deg, rgb(21, 93, 252) 0%, rgb(20, 71, 230) 100%);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  z-index: 10;
+}
+
+.corporate-training .stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.corporate-training .stat-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.corporate-training .stat-value {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: white;
+  text-align: center;
+}
+
+.corporate-training .stat-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #dbeafe;
+  text-align: center;
+}
+
+.corporate-training .mockup-section {
+  position: relative;
+  width: 710px;
+  height: 930px;
+  background: #c2ddff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 199px 51px 104px;
+  flex-shrink: 0;
+}
+
+.corporate-training .mockup-image {
+  width: 100%;
+  max-width: 913px;
+  height: 533px;
+  position: relative;
+}
+
+.corporate-training .mockup-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.corporate-training .mockup-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #0b1f3b;
+  margin-top: 60px;
+  max-width: 510px;
+  text-align: center;
+}
+
+.corporate-training .hand-drawn-arrow {
+  position: absolute;
+  left: 529.76px;
+  top: -15.38px;
+  width: 313.68px;
+  height: 266.19px;
+  transform: rotate(156.82deg);
+}
+
+.corporate-training .hand-drawn-arrow img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Enterprise Training FAQs Section */
+.corporate-training .enterprise-faqs-section {
+  padding: 80px 0;
+  background: rgba(91, 137, 179, 0.1);
+}
+
+.corporate-training .faqs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.corporate-training .faq-item {
+  background: white;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.corporate-training .faq-question {
+  width: 100%;
+  padding: 24px 26px;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #0b1f3b;
+}
+
+.corporate-training .faq-question .faq-icon {
+  flex-shrink: 0;
+}
+
+.corporate-training .faq-question span {
+  flex: 1;
+}
+
+.corporate-training .faq-chevron {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.corporate-training .faq-chevron.open {
+  transform: rotate(180deg);
+}
+
+.corporate-training .faq-answer {
+  padding: 0 26px 24px 66px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #0b1f3b;
+}
+
+/* CTA Section */
+.corporate-training .corporate-cta-section {
+  padding: 0;
+  background: white;
+}
+
+.corporate-training .cta-container {
+  padding: 80px 100px;
+  /* background: linear-gradient(165.69deg, rgb(31, 58, 95) 28.291%, rgb(11, 31, 59) 99.666%); */
+}
+
+.corporate-training .cta-content {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.corporate-training .cta-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  padding: 0 43px;
+}
+
+.corporate-training .cta-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #1F3A5F;
+  margin: 0;
+}
+
+.corporate-training .cta-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #0B1F3B;
+  max-width: 1091px;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.corporate-training .cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.corporate-training .cta-btn-primary,
+.corporate-training .cta-btn-secondary {
+  height: 48px;
+  padding: 0 29px;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.corporate-training .cta-btn-primary {
+  background: linear-gradient(180deg, rgb(154, 174, 211) 0%, rgb(91, 137, 179) 100%);
+  color: #dbebff;
+  border: none;
+  width: 290px;
+}
+
+.corporate-training .cta-btn-secondary {
+  background: transparent;
+  color: #1f3a5f;
+  border: 1px solid #1f3a5f;
+  width: 230px;
+}
+
+.corporate-training .cta-features {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding-top: 56px;
+  border-top: 1.028px solid rgba(154, 174, 211, 0.35);
+  width: 100%;
+}
+
+.corporate-training .cta-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 266.658px;
+  height: 71.989px;
+}
+
+.corporate-training .cta-feature-value {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #1f3a5f;
+  text-align: center;
+  width: 100%;
+}
+
+.corporate-training .cta-feature-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(11, 31, 59, 0.75);
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .corporate-training .container,
+  .corporate-training .corporate-hero-container,
+  .corporate-training .what-sets-us-apart-container {
+    padding: 0 20px;
+  }
+
+  .corporate-training .corporate-hero-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .corporate-training .capability-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .corporate-training .delivery-models-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .corporate-training .what-sets-us-apart-content {
+    flex-direction: column;
+  }
+
+  .corporate-training .stats-section {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .corporate-training .mockup-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .corporate-training .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .corporate-training .cta-features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .corporate-training .capability-cards-grid,
+  .corporate-training .delivery-models-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .corporate-training .one-stop-shop-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .corporate-training .one-stop-shop-title {
+    width: 100%;
+  }
+
+  .corporate-training .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 1920px Web Design - Based on Figma */
+@media (min-width: 1920px) {
+  .corporate-training .container {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 120px;
+  }
+
+  /* Hero Section - 550px height */
+  .corporate-training .corporate-hero-section {
+    min-height: 550px;
+  }
+
+  .corporate-training .corporate-hero-container {
+    max-width: 1680px;
+    padding: 0 120px;
+  }
+
+  .corporate-training .corporate-hero-content {
+    max-width: 842px;
+  }
+
+  .corporate-training .corporate-hero-title {
+    font-size: clamp(48px, 4vw, 56px);
+    line-height: clamp(56px, 5vw, 64px);
+  }
+
+  /* A One-Stop Shop Section */
+  .corporate-training .one-stop-shop-section .container {
+    max-width: 1680px;
+    padding: 0 120px;
+  }
+
+  .corporate-training .one-stop-shop-header {
+    gap: clamp(74px, 6vw, 120px);
+  }
+
+  .corporate-training .one-stop-shop-title {
+    width: clamp(450px, 35vw, 688px);
+    font-size: clamp(40px, 3vw, 56px);
+    line-height: clamp(48px, 4vw, 64px);
+  }
+
+  .corporate-training .capability-cards-grid {
+    gap: clamp(20px, 1.5vw, 30px);
+  }
+
+  /* Who Is This Course For Section */
+  .corporate-training .delivery-models-section .container {
+    max-width: 1680px;
+    padding: 0 120px;
+  }
+
+  .corporate-training .delivery-models-grid {
+    gap: clamp(20px, 1.5vw, 30px);
+  }
+
+  .corporate-training .delivery-model-card {
+    height: clamp(337px, 25vw, 389px);
+  }
+
+  /* What Sets Us Apart Section */
+  .corporate-training .what-sets-us-apart-container {
+    max-width: 1680px;
+    padding: 0 120px;
+  }
+
+  .corporate-training .what-sets-us-apart-content {
+    gap: clamp(60px, 5vw, 100px);
+  }
+
+  .corporate-training .features-list {
+    max-width: clamp(560px, 45vw, 750px);
+  }
+
+  .corporate-training .mockup-section {
+    width: clamp(710px, 55vw, 960px);
+  }
+
+  /* Enterprise Training FAQs Section */
+  .corporate-training .enterprise-faqs-section .container {
+    max-width: 1680px;
+    padding: 0 120px;
+  }
+
+  /* CTA Section */
+  .corporate-training .cta-container {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 80px 120px;
+  }
+
+  .corporate-training .cta-content {
+    max-width: 1680px;
+  }
+
+  .corporate-training .cta-title {
+    font-size: clamp(40px, 3vw, 56px);
+    line-height: clamp(40px, 3vw, 56px);
+  }
+
+  .corporate-training .cta-subtitle {
+    max-width: clamp(1091px, 85vw, 1370px);
+    font-size: clamp(20px, 1.5vw, 24px);
+    line-height: clamp(32px, 2.5vw, 40px);
+  }
+
+  .corporate-training .cta-features {
+    gap: clamp(32px, 2.5vw, 80px);
+  }
+
+  .corporate-training .cta-feature {
+    width: clamp(266px, 20vw, 400px);
+  }
+}

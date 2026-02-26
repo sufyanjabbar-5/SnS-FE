@@ -55,12 +55,15 @@
   border: none;
   cursor: pointer;
   text-align: left;
+  overflow: hidden; /* Ensure content doesn't overflow logically */
 }
 
 .question-left {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Align to top so wrapped text looks good with icon */
   gap: 16px;
+  flex: 1; /* Allow it to take up available space */
+  min-width: 0; /* Important for text truncation/wrapping within flex item */
 }
 
 .icon-help {
@@ -72,6 +75,12 @@
   font-size: 18px;
   font-weight: 600;
   color: #1F3A5F;
+  flex: 1; /* Allow text to wrap and fill space */
+  min-width: 0;
+  word-wrap: break-word; /* Ensure wrapping */
+  /* Ensure line-height handles multi-line text gracefully */
+  line-height: 1.4;
+  white-space: normal !important; /* Force wrapping on all screens, overriding global button styles */
 }
 
 .icon-chevron {
@@ -110,6 +119,10 @@
   .faqs-section .section-title {
     font-size: 32px;
   }
+
+  .faqs-section .section-subtitle {
+    font-size: 16px;
+  }
   
   .faq-question {
     padding: 20px;
@@ -117,5 +130,37 @@
   
   .answer-content {
     padding: 0 20px 20px 56px;
+    font-size: 14px;
+  }
+
+  .faq-question span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faqs-section {
+    padding: 40px 0;
+  }
+
+  .faqs-section .section-title {
+    font-size: 26px;
+  }
+
+  .faqs-section .section-subtitle {
+    font-size: 14px;
+  }
+
+  .faq-question {
+    padding: 16px;
+  }
+
+  .faq-question span {
+    font-size: 15px;
+  }
+
+  .answer-content {
+    padding: 0 16px 16px 48px;
+    font-size: 13px;
   }
 }

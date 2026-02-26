@@ -105,13 +105,13 @@ const ReadyToStart: React.FC = () => {
           <div className="w-full lg:w-[550px] space-y-8">
             <div>
               <h2 
-                className="text-white text-[40px] font-bold leading-[48px] mb-4"
+                className="text-white text-[30px] md:text-[32px] lg:text-[40px] font-bold leading-[36px] lg:leading-[48px] mb-4"
                 style={{ fontFamily: 'DM Sans, sans-serif' }}
               >
                 Ready to Start?
               </h2>
               <p 
-                className="text-white text-xl leading-[32.5px] mb-8"
+                className="text-white text-base sm:text-xl leading-[24px] sm:leading-[32.5px] mb-8"
                 style={{ fontFamily: 'DM Sans, sans-serif' }}
               >
                 Get personalized guidance from our expert counselors
@@ -177,10 +177,10 @@ const ReadyToStart: React.FC = () => {
           </div>
 
           {/* Right Side - Contact Form */}
-          <div className="w-full lg:flex-1 bg-white rounded-[24px] shadow-[0px_25px_50px_0px_rgba(0,0,0,0.05)] p-6 md:p-10">
+          <div className="w-full lg:flex-1 bg-white rounded-[24px] shadow-[0px_25px_50px_0px_rgba(0,0,0,0.05)] p-6 md:p-8 lg:p-10">
             <div className="mb-8">
               <h2 
-                className="text-[#101828] text-[32px] font-bold leading-[36px] mb-2"
+                className="text-[#101828] text-[28px] md:text-[30px] lg:text-[32px] font-bold leading-[32px] sm:leading-[36px] mb-2"
                 style={{ fontFamily: 'DM Sans, sans-serif' }}
               >
                 Get Free Counseling

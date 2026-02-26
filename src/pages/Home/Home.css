@@ -52,3 +52,42 @@
   color: #DBEBFF !important;
   border: none !important;
 }
+
+@media (max-width: 767px) {
+  .marquee-container {
+    overflow: visible;
+    padding: 0 16px;
+  }
+
+  .marquee-track {
+    animation: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    padding-right: 0;
+    justify-items: center;
+  }
+
+  .marquee-track .marquee-logo:nth-child(n + 9) {
+    display: none;
+  }
+
+  .marquee-logo {
+    height: 72px;
+    width: 100%;
+    min-width: 0;
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 320px) {
+  .home-hero-section button,
+  .enroll-batch-button {
+    font-size: 11px !important;
+    line-height: 1.15;
+    white-space: nowrap;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}

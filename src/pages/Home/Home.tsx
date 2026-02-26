@@ -146,7 +146,7 @@ const Home: React.FC = () => {
       description: 'PMI exams are often taught as shortcuts. Learn how professionals develop real knowledge, pass with confidence, and grow their careers beyond the exam.',
       mainImage: slide1InstructorImage,
       circles: [slide1Circle1, slide1Circle2, slide1Circle3, slide1Circle4],
-      imageClassName: 'rotate-[0.75deg] h-[600px] lg:h-[700px] mt-[24px] lg:scale-110 origin-center',
+      imageClassName: 'rotate-[0.75deg] h-[580px] lg:h-[650px] mt-[24px] origin-center',
       buttons: [
         { label: 'About SNSCCS', onClick: () => navigate('/about'), variant: 'primary' },
         { label: 'Download Brochure', onClick: handleDownloadBrochure, variant: 'enroll' }

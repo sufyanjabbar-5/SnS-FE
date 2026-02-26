@@ -19,8 +19,8 @@ const UpcomingBatches = () => {
   if (batches.length === 0) return null;
 
   return (
-    <section className="relative bg-white py-14 sm:py-20 px-6 md:px-[100px]">
-      <div className="max-w-[1920px] mx-auto relative">
+    <section className="relative bg-white py-14 sm:py-20 px-6 md:px-12 lg:px-20">
+      <div className="max-w-screen-2xl mx-auto relative">
         {/* Header */}
         <div className="text-center mb-[48px]">
           <h2 

@@ -99,7 +99,7 @@ const ReadyToStart: React.FC = () => {
       </div>
 
       {/* Content Container */}
-      <div className="relative max-w-[1920px] mx-auto px-6 md:px-[100px] py-20">
+      <div className="relative max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20 py-20">
         <div className="flex flex-col lg:flex-row gap-12 items-start">
           {/* Left Side - Contact Info */}
           <div className="w-full lg:w-[550px] space-y-8">

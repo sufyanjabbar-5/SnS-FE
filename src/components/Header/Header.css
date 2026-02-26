@@ -8,11 +8,24 @@
 
 .header-container {
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 1.5rem;
   width: 100%;
+  max-width: 1536px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-container {
+    padding: 0 5rem;
+  }
 }
 
 /* Top Bar */

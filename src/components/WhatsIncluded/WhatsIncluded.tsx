@@ -4,7 +4,7 @@ import './WhatsIncluded.css';
 
 const WhatsIncluded: React.FC = () => {
   return (
-    <section className="whats-included-flex-section">
+    <section className="whats-included-flex-section max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20">
       <div className="included-left-content">
         <div className="section-header">
           <h2 className="section-title mb-4">What's Included</h2>

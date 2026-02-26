@@ -83,7 +83,7 @@ const HomeHero: React.FC<HomeHeroProps> = ({ slides }) => {
           </div>
 
           {/* Content */}
-          <div className="relative max-w-screen-2xl mx-auto px-6 md:px-20 h-full flex flex-col justify-center hero-content-wrap">
+          <div className="relative max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20 h-full flex flex-col justify-center hero-content-wrap">
             <div className="max-w-[725px] hero-content-inner">
               <div className="flex items-center gap-3 mb-8 hero-badges">
                 {slide.badges.map((badge, i) => (

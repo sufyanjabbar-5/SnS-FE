@@ -62,10 +62,10 @@ const Programs: React.FC = () => {
 
   return (
     <section 
-      className="relative py-14 sm:py-20 px-6 md:px-[100px]"
+      className="relative py-14 sm:py-20 px-6 md:px-12 lg:px-20"
       style={{ background: 'linear-gradient(180deg, rgba(91, 137, 179, 0.10) 0%, rgba(154, 174, 211, 0.10) 100%)' }}
     >
-      <div className="max-w-[1920px] mx-auto relative">
+      <div className="max-w-screen-2xl mx-auto relative">
         {/* Header */}
         <div className="flex flex-col text-center">
           <h2 

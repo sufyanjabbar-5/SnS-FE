@@ -288,7 +288,7 @@ const Home: React.FC = () => {
       <Programs />
 
       {/* Why Choose Us */}
-      <section className="py-14 sm:py-20 px-6 md:px-20 choose-us-section-gradient">
+      <section className="py-14 sm:py-20 px-6 md:px-12 lg:px-20 choose-us-section-gradient">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center">
             <h2 className="text-[30px] md:text-3xl lg:text-4xl font-bold leading-tight text-[#1F3A5F] mb-4">Why Choose Us</h2>
@@ -322,7 +322,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* How It Works */}
-      <section className="py-14 sm:py-20 px-6 md:px-20 works-section-gradient">
+      <section className="py-14 sm:py-20 px-6 md:px-12 lg:px-20 works-section-gradient">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center">
             <h2 className="text-[30px] md:text-3xl lg:text-4xl font-bold leading-tight text-white mb-4">How It Works</h2>

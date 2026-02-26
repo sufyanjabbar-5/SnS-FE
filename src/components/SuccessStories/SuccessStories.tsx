@@ -44,18 +44,18 @@ const testimonials: Testimonial[] = [
 
 const SuccessStories: React.FC = () => {
   return (
-     <section className="bg-[#c2ddff]/15 py-20 px-6 md:px-20">
-            <div className="max-w-screen-2xl mx-auto">
+     <section className="bg-[#c2ddff]/15 py-14 sm:py-20 px-6 md:px-12 lg:px-20">
+            <div>
               <div className="text-center">
-                <h2 className="text-4xl font-bold text-[#1f3a5f] mb-4">Success Stories</h2>
-                <p className="text-xl text-[#0b1f3b] max-w-2xl mx-auto mb-8">
+                <h2 className="text-[30px] md:text-3xl lg:text-4xl font-bold leading-tight text-[#1f3a5f] mb-4">Success Stories</h2>
+                <p className="text-base md:text-lg lg:text-xl text-[#0b1f3b] max-w-2xl mx-auto mb-8">
                   Join thousands who achieved PMP certification through our live virtual training
                 </p>
               </div>
     
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {testimonials.map((testimonial, index) => (
-                  <div key={index} className="bg-white border border-[#9aaed3]/35 rounded-2xl p-8">
+                  <div key={index} className="bg-white border border-[#9aaed3]/35 rounded-2xl p-6 sm:p-8">
                     {/* Profile */}
                     <div className="flex items-center gap-4 mb-4">
                       <img 
@@ -64,7 +64,7 @@ const SuccessStories: React.FC = () => {
                         className="w-16 h-16 rounded-full object-cover"
                       />
                       <div>
-                        <h3 className="text-xl font-semibold text-[#1f3a5f]">{testimonial.name}</h3>
+                        <h3 className="text-lg sm:text-xl font-semibold text-[#1f3a5f]">{testimonial.name}</h3>
                         <p className="text-sm font-medium text-[#0b1f3b]">{testimonial.role}</p>
                         <p className="text-xs text-[#0b1f3b]/75">{testimonial.company}</p>
                       </div>

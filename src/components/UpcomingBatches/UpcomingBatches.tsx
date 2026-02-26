@@ -19,18 +19,18 @@ const UpcomingBatches = () => {
   if (batches.length === 0) return null;
 
   return (
-    <section className="relative bg-white py-20 px-6 md:px-[100px]">
-      <div className="max-w-[1920px] mx-auto relative">
+    <section className="relative bg-white py-14 sm:py-20 px-6 md:px-12 lg:px-16">
+      <div className="relative">
         {/* Header */}
         <div className="text-center mb-[48px]">
           <h2 
-            className="font-['DM_Sans'] font-bold text-[40px] leading-[40px] text-[#1f3a5f] mb-4"
+            className="font-['DM_Sans'] font-bold text-[30px] leading-[34px] md:text-[32px] lg:text-[40px] lg:leading-[40px] text-[#1f3a5f] mb-4"
             style={{ fontVariationSettings: "'opsz' 14" }}
           >
             Upcoming Batches
           </h2>
           <p 
-            className="font-['DM_Sans'] font-normal text-[20px] leading-[28px] text-[#0b1f3b] max-w-[669px] mx-auto"
+            className="font-['DM_Sans'] font-normal text-[16px] leading-[24px] md:text-lg lg:text-[20px] lg:leading-[28px] text-[#0b1f3b] max-w-[669px] mx-auto"
             style={{ fontVariationSettings: "'opsz' 14" }}
           >
             Choose a schedule that fits your availability. Limited seats available!
@@ -42,7 +42,7 @@ const UpcomingBatches = () => {
           {batches.slice(0, 2).map((batch, index) => (
             <div 
               key={index}
-              className="bg-white border-2 border-[rgba(154,174,211,0.25)] rounded-[14px] p-[42px] flex-shrink-0 w-full md:w-[calc(50%-10px)] relative hover:shadow-lg transition-shadow"
+              className="bg-white border-2 border-[rgba(154,174,211,0.25)] rounded-[14px] p-5 md:p-8 lg:p-[42px] flex-shrink-0 w-full md:w-[calc(50%-10px)] relative hover:shadow-lg transition-shadow"
             >
               {/* Badge Image - Top Right */}
               <div className="hidden sm:block absolute right-7 top-7 w-20 h-20">
@@ -52,18 +52,18 @@ const UpcomingBatches = () => {
               {/* Card Content */}
               <div className="w-full max-w-[496px]">
                 {/* Tags */}
-                <div className="flex gap-2.5 mb-6">
-                  <div className="bg-[#230a4a] px-3 h-[30px] rounded-full shadow-sm flex items-center">
+                <div className="flex gap-2 mb-6">
+                  <div className="bg-[#230a4a] px-2 sm:px-3 h-[26px] sm:h-[30px] rounded-full shadow-sm flex items-center">
                     <p 
-                      className="font-['DM_Sans'] font-semibold text-[11px] sm:text-[14px] leading-[16px] text-white"
+                      className="font-['DM_Sans'] font-semibold text-[10px] sm:text-[14px] leading-[14px] sm:leading-[16px] text-white whitespace-nowrap"
                       style={{ fontVariationSettings: "'opsz' 14" }}
                     >
                       {batch.certification?.shortName || 'PMP'} Certification
                     </p>
                   </div>
-                  <div className="bg-[#60a5fa] border border-[rgba(194,221,255,0.25)] px-3 h-[30px] rounded-full shadow-sm flex items-center">
+                  <div className="bg-[#60a5fa] border border-[rgba(194,221,255,0.25)] px-2 sm:px-3 h-[26px] sm:h-[30px] rounded-full shadow-sm flex items-center">
                     <p 
-                      className="font-['DM_Sans'] font-semibold text-[11px] sm:text-[14px] leading-[16px] text-white"
+                      className="font-['DM_Sans'] font-semibold text-[10px] sm:text-[14px] leading-[14px] sm:leading-[16px] text-white whitespace-nowrap"
                       style={{ fontVariationSettings: "'opsz' 14" }}
                     >
                       Live Bootcamp
@@ -73,7 +73,7 @@ const UpcomingBatches = () => {
 
                 {/* Title */}
                 <h3 
-                  className="font-['DM_Sans'] font-semibold text-[24px] leading-[32px] text-[#1f3a5f] mb-6"
+                  className="font-['DM_Sans'] font-semibold text-[20px] leading-[28px] md:text-[22px] lg:text-[24px] lg:leading-[32px] text-[#1f3a5f] mb-6"
                   style={{ fontVariationSettings: "'opsz' 14" }}
                 >
                   Weekend Class (Fri-Sat-Sun)
@@ -179,7 +179,7 @@ const UpcomingBatches = () => {
                         </p>
                       )}
                       <p 
-                        className="font-['DM_Sans'] font-semibold text-[32px] leading-[36px] text-[#60a5fa] mt-1"
+                        className="font-['DM_Sans'] font-semibold text-[28px] leading-[32px] md:text-[30px] lg:text-[32px] sm:leading-[36px] text-[#60a5fa] mt-1"
                         style={{ fontVariationSettings: "'opsz' 14" }}
                       >
                         {batch.certification?.offerings?.[0] 
@@ -202,7 +202,7 @@ const UpcomingBatches = () => {
 
         {/* Footer Text */}
         <p 
-          className="font-['DM_Sans'] font-medium text-[16px] leading-[24px] text-[#0b1f3b] text-center"
+          className="font-['DM_Sans'] font-medium text-[14px] leading-[22px] sm:text-[16px] sm:leading-[24px] text-[#0b1f3b] text-center"
           style={{ fontVariationSettings: "'opsz' 14" }}
         >
           All batches include 35 PDUs • 4 Exam Simulation • 6 months support • Lifetime recordings

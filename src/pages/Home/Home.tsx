@@ -146,7 +146,7 @@ const Home: React.FC = () => {
       description: 'PMI exams are often taught as shortcuts. Learn how professionals develop real knowledge, pass with confidence, and grow their careers beyond the exam.',
       mainImage: slide1InstructorImage,
       circles: [slide1Circle1, slide1Circle2, slide1Circle3, slide1Circle4],
-      imageClassName: 'rotate-[0.75deg] h-[600px] mt-[24px]',
+      imageClassName: 'rotate-[0.75deg] h-[580px] lg:h-[650px] mt-[24px] origin-center',
       buttons: [
         { label: 'About SNSCCS', onClick: () => navigate('/about'), variant: 'primary' },
         { label: 'Download Brochure', onClick: handleDownloadBrochure, variant: 'enroll' }
@@ -178,7 +178,7 @@ const Home: React.FC = () => {
     },
     {
       id: 3,
-      bgType: 'gradient',
+      bgType: 'purple',
       badges: [
         { icon: slide3BadgeIcon1, text: 'PMI-Backed Quality Training' },
         { icon: slide3BadgeIcon2, text: 'Global Recognition' }
@@ -190,10 +190,9 @@ const Home: React.FC = () => {
         'Expert guidance & support',
         'Structured path to certification & career growth'
       ],
-      mainImage: slide3BadgeImage,
-      circles: [slide3Circle1, slide3Circle2, slide3Circle3, slide3Circle4],
+      mainImage: slide2BadgeImage,
+      circles: [slide2Circle1, slide2Circle2, slide2Circle3, slide2Circle4],
       imageClassName: 'w-[444px] h-[444px]',
-      circleContainerClassName: 'top-[-110px] translate-y-0',
       buttons: [
         { label: 'Enroll Now', onClick: () => {}, variant: 'primary' },
         { label: 'Learn More', onClick: () => {}, variant: 'secondary' }
@@ -270,7 +269,7 @@ const Home: React.FC = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full home-page">
       <HomeHero slides={heroSlides} />
 
       {/* Company Logos Strip */}
@@ -289,11 +288,11 @@ const Home: React.FC = () => {
       <Programs />
 
       {/* Why Choose Us */}
-      <section className="py-20 px-6 md:px-20 choose-us-section-gradient">
-        <div className="max-w-screen-2xl mx-auto">
+      <section className="py-14 sm:py-20 px-6 md:px-12 lg:px-20 choose-us-section-gradient">
+        <div >
           <div className="text-center">
-            <h2 className="text-4xl font-bold text-[#1F3A5F] mb-4">Why Choose Us</h2>
-            <p className="text-lg text-[#0B1F3B] max-w-2xl mx-auto mb-8">
+            <h2 className="text-[30px] md:text-3xl lg:text-4xl font-bold leading-tight text-[#1F3A5F] mb-4">Why Choose Us</h2>
+            <p className="text-base sm:text-lg text-[#0B1F3B] max-w-2xl mx-auto mb-8">
               Most PMI training focuses on shortcuts. We focus on real learning that builds confidence and lasts beyond the exam.
             </p>
           </div>
@@ -304,7 +303,7 @@ const Home: React.FC = () => {
                 <div className="w-14 h-14 bg-[#C2DDFF80] rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl text-[#5B89B3]">
                   {item.icon}
                 </div>
-                <h3 className="text-lg font-bold text-[#1F3A5F] mb-3">{item.title}</h3>
+                <h3 className="text-base sm:text-lg font-bold text-[#1F3A5F] mb-3">{item.title}</h3>
                 <p className="text-sm text-[#0B1F3B] mx-auto choose-us-desc-text" style={{ "--item-width": item.width } as React.CSSProperties}>{item.description}</p>
               </div>
             ))}
@@ -314,7 +313,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 bg-[#5B89B3] border border-[#5B89B3] rounded-[16px] p-6">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl font-bold text-[#ffffff] mb-2">{stat.value}</div>
+                <div className="text-[30px] sm:text-4xl font-bold text-[#ffffff] mb-2">{stat.value}</div>
                 <div className="text-sm text-[#BEDBFF]">{stat.label}</div>
               </div>
             ))}
@@ -323,11 +322,11 @@ const Home: React.FC = () => {
       </section>
 
       {/* How It Works */}
-      <section className="py-20 px-6 md:px-20 works-section-gradient">
-        <div className="max-w-screen-2xl mx-auto">
+      <section className="py-14 sm:py-20 px-6 md:px-12 lg:px-20 works-section-gradient">
+        <div>
           <div className="text-center">
-            <h2 className="text-4xl font-bold text-white mb-4">How It Works</h2>
-            <p className="text-lg text-white/80 max-w-[580px] mx-auto mb-8">
+            <h2 className="text-[30px] md:text-3xl lg:text-4xl font-bold leading-tight text-white mb-4">How It Works</h2>
+            <p className="text-base sm:text-lg text-white/80 max-w-[580px] mx-auto mb-8">
               Your journey to PMP certification is simple and structured. Follow our proven 4-step process.
             </p>
           </div>
@@ -336,9 +335,9 @@ const Home: React.FC = () => {
             {howItWorks.map((step, index) => (
               <div key={index} className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
                 <img className='w-full' src={step.image} alt="" />
-                <div className="p-6">
+                <div className="p-5 sm:p-6">
                   <div className="text-xs font-semibold text-[#5B89B3] mb-2">{step.step}</div>
-                  <h3 className="text-xl font-bold text-[#1F3A5F] mb-3">{step.title}</h3>
+                  <h3 className="text-lg sm:text-xl font-bold text-[#1F3A5F] mb-3">{step.title}</h3>
                   <p className="text-sm text-[#0B1F3BBF] max-w-[270px]">{step.description}</p>
                 </div>
               </div>

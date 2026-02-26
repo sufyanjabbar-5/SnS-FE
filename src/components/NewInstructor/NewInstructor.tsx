@@ -66,7 +66,7 @@ const NewInstructor: React.FC<NewInstructorProps> = ({
           </div>
 
           {/* ─── Right Side: Content Area ─── */}
-          <div className="w-full flex flex-col justify-between px-4 py-8 md:px-[100px] md:py-[100px] gap-10 md:gap-0">
+          <div className="w-full flex flex-col justify-between px-6 py-8 md:px-12 lg:px-20 md:py-[100px] gap-10 md:gap-0 md:max-w-none md:mx-0">
 
             {/* Top: Heading */}
             <div className="flex flex-col gap-7 md:gap-8">

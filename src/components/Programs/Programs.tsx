@@ -62,20 +62,20 @@ const Programs: React.FC = () => {
 
   return (
     <section 
-      className="relative py-20 px-6 md:px-[100px]"
+      className="relative py-14 sm:py-20 px-6 md:px-12 lg:px-20"
       style={{ background: 'linear-gradient(180deg, rgba(91, 137, 179, 0.10) 0%, rgba(154, 174, 211, 0.10) 100%)' }}
     >
-      <div className="max-w-[1920px] mx-auto relative">
+      <div className="relative">
         {/* Header */}
         <div className="flex flex-col text-center">
           <h2 
-            className="font-['DM_Sans'] font-bold text-[40px] leading-[40px] text-[#1f3a5f] mb-4"
+            className="font-['DM_Sans'] font-bold text-[30px] leading-[34px] md:text-[32px] lg:text-[40px] lg:leading-[40px] text-[#1f3a5f] mb-4"
             style={{ fontVariationSettings: "'opsz' 14" }}
           >
             Our Services
           </h2>
           <p 
-            className="font-['DM_Sans'] font-normal text-[20px] leading-[28px] text-[#0b1f3b] max-w-[951px] mb-8 self-center"
+            className="font-['DM_Sans'] font-normal text-[16px] leading-[24px] md:text-[18px] lg:text-[20px] lg:leading-[28px] text-[#0b1f3b] max-w-[951px] mb-8 self-center"
             style={{ fontVariationSettings: "'opsz' 14" }}
           >
             We provide flexible and professional learning solutions designed to help individuals and organizations grow, upskill, and stay certification-ready.
@@ -121,7 +121,7 @@ const Programs: React.FC = () => {
                 {/* Title */}
                 <div className="absolute left-6 top-[88px] w-[236px]">
                   <h3 
-                    className="font-['DM_Sans'] font-bold text-[20px] leading-[28px] tracking-[-0.5px] text-[#1f3a5f] whitespace-pre-line"
+                    className="font-['DM_Sans'] font-bold text-[18px] leading-[24px] sm:text-[20px] sm:leading-[28px] tracking-[-0.5px] text-[#1f3a5f] whitespace-pre-line"
                     style={{ fontVariationSettings: "'opsz' 14" }}
                   >
                     {program.title}

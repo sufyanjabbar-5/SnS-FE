@@ -71,27 +71,373 @@
   border: none !important;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 1024px) {
-  .mobile-screen {
-    opacity: 0.3;
-  }
-}
-@media (max-width: 700px) {
-  .mobile-buttons-container {
-    bottom: 60px;
-  }
-}
-@media (max-width: 425px) {
-  .mobile-section-title {
-    font-size: 30px;
+/* Mobile Responsiveness - Unified for All Slides */
+/* Removed duplicate overlapping media query */
+
+@media (max-width: 430px) {
+  .home-hero-section {
+    height: 710px !important;
   }
 
-  .mobile-section-text {
-    font-size: 16px;
+  .hero-visual-container {
+    right: auto !important;
+    left: 50% !important;
+    top: 50px !important;
+    width: 300px !important;
+    height: 300px !important;
+    transform: translateX(-50%) !important;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+
+  .hero-visual-container .hero-circle:nth-child(1) {
+    width: 260px !important;
+    height: 260px !important;
+    opacity: 0.22;
+  }
+
+  .hero-visual-container .hero-circle:nth-child(2) {
+    width: 198px !important;
+    height: 198px !important;
+    opacity: 0.4;
+  }
+
+  .hero-visual-container .hero-circle:nth-child(3),
+  .hero-visual-container .hero-circle:nth-child(4) {
+    display: none;
+  }
+
+  .hero-main-image {
+    width: 180px !important;
+    height: 180px !important;
+    margin-top: 50px;
+    opacity: 1 !important;
+    overflow: hidden;
+  }
+
+  .hero-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain !important;
+    object-position: center center;
+    transform: scale(1); 
+  }
+
+  .hero-content-wrap {
+    justify-content: flex-start !important;
+    padding-top: 285px;
+  }
+
+  .hero-content-inner {
+    max-width: 100% !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-badges {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+    max-width: 100%;
+  }
+
+  .hero-badge {
+    padding: 4px 8px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .hero-badge span {
+    font-size: 10px;
+  }
+
+  .hero-badge img {
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  .hero-title {
+    font-size: 35px !important;
+    line-height: 1.15 !important;
+    margin-bottom: 10px;
+    margin-top: 4px;
+  }
+
+  .hero-description {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    max-width: 94% !important;
+    margin: 0 auto 5px;
   }
 
   .mobile-buttons-container {
-    bottom: 40px;
+    bottom: 78px !important;
+  }
+
+  /* Hide checklists on mobile for all slides */
+  .hero-checklist {
+    display: none !important;
+  }
+
+  .hero-buttons-container {
+    max-width: 100% !important;
+    margin: 0 auto;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .hero-buttons-container button {
+    min-width: 0;
+    width: 100%;
+    height: 44px;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  .hero-carousel-dots {
+    right: 50% !important;
+    bottom: 10px !important;
+    transform: translateX(50%);
   }
 }
+
+@media (max-width: 390px) {
+  .home-hero-section {
+    height: 690px !important;
+  }
+
+  .hero-visual-container {
+    width: 286px !important;
+    height: 286px !important;
+    top: 48px !important;
+  }
+
+  .hero-main-image {
+    width: 170px !important;
+    height: 170px !important;
+  }
+
+  .hero-content-wrap {
+    padding-top: 268px;
+  }
+
+  .hero-badges {
+    margin-bottom: 14px;
+  }
+
+  .hero-title {
+    font-size: 32px !important;
+  }
+
+  .hero-description {
+    font-size: 13.5px !important;
+  }
+
+  .hero-buttons-container button {
+    font-size: 13px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 375px) {
+  .home-hero-section {
+    height: 670px !important;
+  }
+
+  .hero-visual-container {
+    width: 272px !important;
+    height: 272px !important;
+    top: 45px !important;
+  }
+
+  .hero-main-image {
+    width: 165px !important;
+    height: 165px !important;
+  }
+
+  .hero-content-wrap {
+    padding-top: 260px;
+  }
+
+  .hero-badges {
+    margin-bottom: 12px;
+  }
+
+  .hero-title {
+    font-size: 30px !important;
+  }
+
+  .hero-description {
+    font-size: 13px !important;
+  }
+
+  .hero-buttons-container button {
+    font-size: 12.5px;
+    height: 41px;
+  }
+
+  .mobile-buttons-container {
+    bottom: 70px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .home-hero-section {
+    height: 640px !important;
+  }
+
+  .hero-visual-container {
+    width: 238px !important;
+    height: 238px !important;
+    top: 42px !important;
+  }
+
+  .hero-main-image {
+    width: 160px !important;
+    height: 160px !important;
+  }
+
+  .hero-content-wrap {
+    padding-top: 250px;
+  }
+
+  .hero-badges {
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+
+  .hero-badge {
+    padding: 3px 6px;
+  }
+
+  .hero-badge span {
+    font-size: 9px;
+  }
+
+  .hero-badge img {
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  .hero-title {
+    font-size: 26px !important;
+    line-height: 1.15 !important;
+  }
+
+  .hero-description {
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+  }
+
+  .hero-buttons-container button {
+    font-size: 11.5px;
+    height: 38px;
+    padding: 0 8px;
+  }
+
+  .mobile-buttons-container {
+    bottom: 60px !important;
+  }
+}
+
+/* Tablet Responsiveness */
+@media (min-width: 431px) and (max-width: 1024px) {
+  .home-hero-section {
+    height: auto !important;
+    min-height: 605px;
+    padding-bottom: 120px !important; /* Space for buttons */
+    overflow: visible; /* Allow visual container to slightly overlap if needed */
+  }
+
+  .hero-visual-container {
+    width: 25% !important; /* Larger container for better image visibility */
+    max-width: 450px;
+    height: auto !important;
+    aspect-ratio: 1/1;
+    opacity: 1 !important;
+    
+    position: absolute !important;
+    right: 10% !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    
+    z-index: 0 !important;
+    pointer-events: none;
+    
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ensure the inner relative container takes full space */
+  .hero-visual-container > div {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Force circles to fit the container */
+  .hero-circle {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100%;
+    max-height: 100%;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    object-fit: contain !important;
+  }
+  
+  /* Size the main image appropriately within the background */
+  .hero-main-image {
+    width: 85% !important; /* Adjust this percentage to control image size relative to circles */
+    height: 85% !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 10;
+  }
+
+  .hero-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .hero-content-wrap {
+    z-index: 10 !important;
+    position: relative !important;
+    justify-content: flex-start !important; /* Override center alignment */
+    padding-top: 80px !important; /* Reduce top space */
+    height: auto !important; /* Let content dictate height */
+  }
+
+  .hero-title {
+    font-size: 36px !important;
+    line-height: 1.2 !important;
+    max-width: 60%; /* Prevent overlap with image */
+  }
+
+  .hero-description {
+    font-size: 16px !important;
+    max-width: 60%;
+  }
+
+  .hero-checklist {
+    gap: 12px !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    margin-bottom: 40px !important; /* Push buttons down if relative, or just add space */
+    display: grid !important; /* Ensure grid is active */
+  }
+
+  .mobile-buttons-container {
+    padding-bottom: 0 !important;
+    bottom: 40px !important; /* Adjust button position closer to bottom */
+  }
+}
+

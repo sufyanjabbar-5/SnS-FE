@@ -43,7 +43,7 @@ const FAQs: React.FC = () => {
 
   return (
     <section className="faqs-section" id="faqs">
-      <div className="container">
+      <div className="w-full px-6 md:px-12 lg:px-20">
         <div className="section-header text-center">
           <h2 className="section-title mb-4">FAQs</h2>
           <p className="section-subtitle mb-8">

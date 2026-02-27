@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.live-virtual-classes .live-section-container {
+  width: 100%;
+}
+
 /* Hero Section - Exact Figma Colors */
 .live-virtual-classes .hero-section {
   background: linear-gradient(165.69deg, rgb(31, 58, 95) 28.291%, rgb(11, 31, 59) 99.666%);
@@ -192,6 +196,8 @@
   flex-direction: column;
   gap: 16px;
   max-width: 715px;
+  margin-left: auto;
+  width: 100%;
 }
 
 .live-virtual-classes .about-card {
@@ -732,7 +738,7 @@
 
 /* Schedule Section */
 .live-virtual-classes .schedule-section {
-  padding: 10px;
+  padding: 0;
   background: #5B89B3;
   max-width: 1920px;
   margin: 0 auto;
@@ -860,8 +866,8 @@
   padding: 32px;
   border-radius: 16px;
   background: linear-gradient(0deg, #1F3A5F 0%, #1F3A5F 100%), linear-gradient(142deg, #1F3A5F 28.29%, #0B1F3B 99.67%), linear-gradient(180deg, #1E40AF 0%, #1E3A8A 100%);
-  max-width: 87%;
-  margin: auto;
+  max-width: 100%;
+  margin: 0;
 }
 
 .live-virtual-classes .stats-grid-combined {
@@ -920,8 +926,9 @@
 }
 
 .live-virtual-classes .faqs-list {
-  max-width: 1240px;
-  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1687,6 +1694,73 @@
 
   .live-virtual-classes .schedule-grid {
     grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    align-items: stretch;
+  }
+
+  .live-virtual-classes .schedule-card {
+    height: auto;
+    min-height: 280px;
+    padding: 10px;
+  }
+
+  .live-virtual-classes .schedule-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+    height: auto;
+    position: static;
+  }
+
+  .live-virtual-classes .schedule-badge {
+    position: static;
+    left: auto;
+    top: auto;
+    height: auto;
+    width: fit-content;
+  }
+
+  .live-virtual-classes .schedule-title {
+    position: static;
+    left: auto;
+    top: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    line-height: 1.25;
+  }
+
+  .live-virtual-classes .schedule-topics {
+    position: static;
+    left: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+  }
+
+  .live-virtual-classes .schedule-topic-item {
+    position: static;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .live-virtual-classes .schedule-topic-icon {
+    position: static;
+    left: auto;
+    top: auto;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .live-virtual-classes .schedule-topic-text {
+    position: static;
+    left: auto;
+    top: auto;
+    display: block;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
   }
 
   .live-virtual-classes .stats-grid {
@@ -1804,7 +1878,7 @@
   .live-virtual-classes .about-cards {
     flex-direction: column;
     gap: 20px;
-    padding: 24px;
+    padding: 0;
     max-width: 100%;
   }
 
@@ -1879,7 +1953,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 0 16px;
+    padding: 0;
     justify-content: flex-start;
   }
 
@@ -1993,7 +2067,7 @@
   .live-virtual-classes .batches-list {
     flex-direction: column;
     gap: 16px;
-    padding: 0 24px;
+    padding: 0;
     align-items: center;
     width: 100%;
   }
@@ -2198,7 +2272,7 @@
     margin-bottom: 0;
     color: white;
     text-align: center;
-    padding: 0 16px;
+    padding: 0;
   }
 
   .live-virtual-classes .schedule-grid {
@@ -2206,7 +2280,7 @@
     flex-direction: column;
     gap: 20px;
     height: auto;
-    padding: 0 16px;
+    padding: 0;
     margin-top: 0;
   }
 
@@ -2214,9 +2288,12 @@
     background: white;
     border: 2px solid rgba(154, 174, 211, 0.25);
     border-radius: 16px;
-    height: 280px;
+    height: auto;
+    min-height: 280px;
     padding: 10px;
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .live-virtual-classes .schedule-card-content {
@@ -2224,7 +2301,7 @@
     flex-direction: column;
     gap: 16px;
     padding: 24px;
-    height: 100%;
+    height: auto;
   }
 
   .live-virtual-classes .schedule-badge {
@@ -2308,7 +2385,7 @@
   /* Stats Section Mobile */
   .live-virtual-classes .stats-section-combined {
     margin-top: 16px;
-    max-width: 76%;
+    max-width: 100%;
   }
 
   .live-virtual-classes .stats-grid-combined {
@@ -2479,5 +2556,66 @@
   /* Container Padding Mobile */
   .live-virtual-classes .container {
     padding: 0 16px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .live-virtual-classes .live-section-container .section-header,
+  .live-virtual-classes .live-section-container .batches-section .section-header,
+  .live-virtual-classes .live-section-container .about-section .section-header,
+  .live-virtual-classes .live-section-container .target-audience-section .section-header,
+  .live-virtual-classes .live-section-container .faqs-section-live .section-header {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (min-width: 2560px) {
+  .live-virtual-classes .live-section-container {
+    max-width: 2200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 96px !important;
+    padding-right: 96px !important;
+  }
+
+  .live-virtual-classes .inner-hero-shell {
+    max-width: 2200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 96px !important;
+    padding-right: 96px !important;
+  }
+
+  .live-virtual-classes .schedule-section {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .live-virtual-classes .stats-section-combined {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 3840px) {
+  .live-virtual-classes .live-section-container {
+    max-width: 2600px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 140px !important;
+    padding-right: 140px !important;
+  }
+
+  .live-virtual-classes .inner-hero-shell {
+    max-width: 2600px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 140px !important;
+    padding-right: 140px !important;
+  }
+
+  .live-virtual-classes .schedule-section {
+    max-width: 100%;
+    width: 100%;
   }
 }

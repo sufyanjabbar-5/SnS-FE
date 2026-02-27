@@ -386,7 +386,7 @@ const LiveVirtualClasses = () => {
 
       {/* About Certification Section */}
       <section className="about-section">
-        <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 lg:grid-cols-[450px_1fr] gap-[75px]">
+        <div className="live-section-container max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 lg:grid-cols-[450px_1fr] gap-[75px]">
           <div className="section-header">
             <h2 className="section-title">About the<br />{currentCourse.fullCertificationName} Certification</h2>
             <p className="section-subtitle">
@@ -417,7 +417,7 @@ const LiveVirtualClasses = () => {
 
       {/* Who Is This Course For */}
       <section className="target-audience-section">
-        <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20">
+        <div className="live-section-container max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="section-header">
             <h2 className="section-title">Who Is This Course For?</h2>
             <p className="section-subtitle">
@@ -449,7 +449,7 @@ const LiveVirtualClasses = () => {
 
       {/* Upcoming Batches */}
       <section id="upcoming-batches" className="batches-section">
-        <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20">
+        <div className="live-section-container max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="section-header">
             <h2 className="section-title">Upcoming Batches</h2>
             <p className="section-subtitle">
@@ -584,7 +584,7 @@ const LiveVirtualClasses = () => {
 
       {/* Training Schedule */}
       <section className="schedule-section ">
-        <div className="schedule-container max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20">
+        <div className="live-section-container schedule-container max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20">
           <h2 className="schedule-section-title">4-Week Training Schedule</h2>
           <div className="schedule-grid">
             {trainingSchedule.map((week, index) => (
@@ -607,6 +607,7 @@ const LiveVirtualClasses = () => {
         </div>
 
         {/* Stats Section - Combined with Training Schedule */}
+        <div className="live-section-container max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20">
         <div className="stats-section-combined mb-8">
           <div className="stats-grid-combined">
             {stats.map((stat, index) => (
@@ -616,6 +617,7 @@ const LiveVirtualClasses = () => {
               </div>
             ))}
           </div>
+        </div>
         </div>
       </section>
 
@@ -638,11 +640,11 @@ const LiveVirtualClasses = () => {
       />
 
       {/* Success Stories */}
-      <SuccessStories />
+      <SuccessStories containerClassName="live-section-container max-w-none" />
 
       {/* FAQs Section */}
       <section className="faqs-section-live">
-        <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20">
+        <div className="live-section-container max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="section-header">
             <h2 className="section-title">Live Virtual Training FAQs</h2>
             <p className="section-subtitle">

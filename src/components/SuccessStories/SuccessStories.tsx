@@ -12,6 +12,10 @@ interface Testimonial {
   achievement: string;
 }
 
+interface SuccessStoriesProps {
+  containerClassName?: string;
+}
+
 const testimonials: Testimonial[] = [
   {
     name: "Nyle Hassan",
@@ -42,10 +46,12 @@ const testimonials: Testimonial[] = [
   }
 ];
 
-const SuccessStories: React.FC = () => {
+const SuccessStories: React.FC<SuccessStoriesProps> = ({
+  containerClassName = 'max-w-screen-2xl'
+}) => {
   return (
      <section className="bg-[#c2ddff]/15 py-14 sm:py-20 px-6 md:px-12 lg:px-20">
-            <div className="max-w-screen-2xl mx-auto">
+            <div className={`${containerClassName} mx-auto w-full`}>
               <div className="text-center">
                 <h2 className="text-[30px] md:text-3xl lg:text-4xl font-bold leading-tight text-[#1f3a5f] mb-4">Success Stories</h2>
                 <p className="text-base md:text-lg lg:text-xl text-[#0b1f3b] max-w-2xl mx-auto mb-8">

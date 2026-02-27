@@ -739,9 +739,11 @@
 }
 
 .live-virtual-classes .schedule-container {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 32px;
+  /* max-width: 90%; */
+  /* margin: 0 auto; */
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /* padding: 32px; */
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1597,6 +1599,25 @@
     transform-origin: right center;
     width: 140px;
     flex: 0 0 auto;
+    max-width: 100%;
+    min-width: 160px;
+  }
+
+  .live-virtual-classes .price-actual {
+    font-size: 14px;
+    left: 45px;
+  }
+
+  .live-virtual-classes .price-strike-through {
+    font-size: 11px;
+  }
+
+  .live-virtual-classes .save-text {
+    font-size: 12px;
+  }
+
+  .live-virtual-classes .sale-ends-text {
+    font-size: 10px;
   }
 
   .live-virtual-classes .batch-enroll-section {
@@ -2124,7 +2145,9 @@
   }
 
   .live-virtual-classes .schedule-container {
-    padding: 0 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* padding: 0 16px; */
     gap: 0;
   }
 

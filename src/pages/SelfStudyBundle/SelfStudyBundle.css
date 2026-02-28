@@ -370,6 +370,7 @@
   .self-study-bundle .whats-included-content {
     flex-direction: column;
     gap: 0;
+    width: 100%;
   }
 
   .self-study-bundle .whats-included-left {
@@ -397,8 +398,12 @@
 
   .self-study-bundle .whats-included-right {
     width: 100%;
-    padding: 24px;
+    padding: 0;
     gap: 20px;
+  }
+
+  .self-study-bundle .whats-included-right .space-y-4 {
+    width: 100%;
   }
 
   .self-study-bundle .whats-included-card {
@@ -409,6 +414,8 @@
     gap: 32px;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .self-study-bundle .whats-included-card-icon {
@@ -971,5 +978,288 @@
     font-size: 20px;
     line-height: 28px;
     max-width: 1132px;
+  }
+}
+
+/* Unified section margins + mobile overflow fixes */
+.self-study-bundle .whats-included-container,
+.self-study-bundle .certifications-container,
+.self-study-bundle .faqs-container,
+.self-study-bundle .inner-hero-shell {
+  width: 100%;
+  max-width: 1536px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .self-study-bundle .certification-card {
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  .self-study-bundle .certification-info {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .self-study-bundle .certification-actions-row {
+    margin-left: 24px;
+    justify-content: flex-end;
+    gap: 16px;
+    min-width: 300px;
+  }
+
+  .self-study-bundle .certification-buy-btn {
+    flex: 0 0 165px;
+  }
+
+  .self-study-bundle .certification-price-wrapper {
+    width: 112px;
+    min-width: 112px;
+    align-items: flex-end;
+  }
+
+  .self-study-bundle .certification-price,
+  .self-study-bundle .certification-price-original {
+    width: 100%;
+    text-align: right;
+  }
+}
+
+@media (min-width: 2560px) {
+  .self-study-bundle .certification-actions-row {
+    min-width: 340px;
+  }
+}
+
+@media (max-width: 767px) {
+  .self-study-bundle .whats-included-container,
+  .self-study-bundle .certifications-container,
+  .self-study-bundle .faqs-container,
+  .self-study-bundle .inner-hero-shell {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .self-study-bundle .certification-actions-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 6px;
+    white-space: normal;
+  }
+
+  .self-study-bundle .certification-buy-btn {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+  }
+
+  .self-study-bundle .certification-price-wrapper {
+    min-width: 92px;
+    align-items: flex-end;
+  }
+
+  .self-study-bundle .certification-price {
+    font-size: 20px;
+    line-height: 28px;
+    white-space: nowrap;
+  }
+
+  .self-study-bundle .certification-price-original {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .self-study-bundle .whats-included-container,
+  .self-study-bundle .certifications-container,
+  .self-study-bundle .faqs-container,
+  .self-study-bundle .inner-hero-shell {
+    max-width: 2200px !important;
+    padding-left: 96px !important;
+    padding-right: 96px !important;
+  }
+}
+
+@media (min-width: 3840px) {
+  .self-study-bundle .whats-included-container,
+  .self-study-bundle .certifications-container,
+  .self-study-bundle .faqs-container,
+  .self-study-bundle .inner-hero-shell {
+    max-width: 2600px !important;
+    padding-left: 140px !important;
+    padding-right: 140px !important;
+  }
+}
+
+/* Final typography tuning for tablet/mobile */
+@media (max-width: 1024px) {
+  .self-study-bundle .inner-hero-title {
+    font-size: 34px !important;
+    line-height: 1.16 !important;
+  }
+
+  .self-study-bundle .inner-hero-subtitle {
+    font-size: 28px !important;
+    line-height: 1.15 !important;
+  }
+
+  .self-study-bundle .inner-hero-description {
+    font-size: 15px !important;
+    line-height: 1.45 !important;
+  }
+
+  .self-study-bundle .inner-hero-badge-text {
+    font-size: 11px !important;
+  }
+
+  .self-study-bundle .inner-hero-btn {
+    font-size: 14px !important;
+  }
+
+  .self-study-bundle .whats-included-title,
+  .self-study-bundle .certifications-title,
+  .self-study-bundle .faqs-title {
+    font-size: 34px !important;
+    line-height: 1.2 !important;
+  }
+
+  .self-study-bundle .whats-included-subtitle,
+  .self-study-bundle .certifications-subtitle,
+  .self-study-bundle .faqs-subtitle {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+  }
+
+  .self-study-bundle .whats-included-card-title,
+  .self-study-bundle .certification-title-text {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+  }
+
+  .self-study-bundle .whats-included-card-description,
+  .self-study-bundle .certification-description,
+  .self-study-bundle .faq-question {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+
+  .self-study-bundle .faq-answer-text,
+  .self-study-bundle .certifications-footer-text {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .self-study-bundle .inner-hero-title {
+    font-size: 30px !important;
+  }
+
+  .self-study-bundle .inner-hero-subtitle {
+    font-size: 24px !important;
+  }
+
+  .self-study-bundle .inner-hero-description {
+    font-size: 13px !important;
+    line-height: 1.42 !important;
+  }
+
+  .self-study-bundle .inner-hero-btn {
+    font-size: 13px !important;
+  }
+
+  .self-study-bundle .whats-included-title,
+  .self-study-bundle .certifications-title,
+  .self-study-bundle .faqs-title {
+    font-size: 30px !important;
+  }
+
+  .self-study-bundle .whats-included-subtitle,
+  .self-study-bundle .certifications-subtitle,
+  .self-study-bundle .faqs-subtitle {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+
+  .self-study-bundle .whats-included-card-title,
+  .self-study-bundle .certification-title-text {
+    font-size: 20px !important;
+  }
+
+  .self-study-bundle .whats-included-card-description,
+  .self-study-bundle .certification-description,
+  .self-study-bundle .faq-question {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+  }
+
+  .self-study-bundle .faq-answer-text,
+  .self-study-bundle .certifications-footer-text {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .self-study-bundle .whats-included-section {
+    padding: 64px 0;
+  }
+
+  .self-study-bundle .whats-included-container {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .self-study-bundle .whats-included-content {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .self-study-bundle .whats-included-left {
+    width: 100% !important;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .self-study-bundle .whats-included-title {
+    font-size: 36px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 20px;
+  }
+
+  .self-study-bundle .whats-included-subtitle {
+    font-size: 18px !important;
+    line-height: 1.55 !important;
+    max-width: 100%;
+  }
+
+  .self-study-bundle .whats-included-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .self-study-bundle .whats-included-card {
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .self-study-bundle .whats-included-card-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
   }
 }

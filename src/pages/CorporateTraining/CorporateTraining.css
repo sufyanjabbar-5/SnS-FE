@@ -783,7 +783,7 @@
   background: transparent;
   color: #1f3a5f;
   border: 1px solid #1f3a5f;
-  width: 230px;
+  width: 290px;
 }
 
 .corporate-training .cta-features {
@@ -1007,5 +1007,319 @@
 
   .corporate-training .cta-feature {
     width: clamp(266px, 20vw, 400px);
+  }
+}
+
+/* Self-Study-aligned responsive typography + container consistency */
+@media (max-width: 1024px) {
+  .corporate-training .container,
+  .corporate-training .corporate-hero-container,
+  .corporate-training .what-sets-us-apart-container,
+  .corporate-training .cta-container,
+  .corporate-training .inner-hero-shell {
+    width: 100%;
+    max-width: 1536px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .corporate-training .inner-hero-title,
+  .corporate-training .one-stop-shop-title,
+  .corporate-training .section-title,
+  .corporate-training .what-sets-us-apart-title,
+  .corporate-training .cta-title {
+    font-size: 34px !important;
+    line-height: 1.2 !important;
+  }
+
+  .corporate-training .inner-hero-subtitle,
+  .corporate-training .inner-hero-description,
+  .corporate-training .one-stop-shop-description,
+  .corporate-training .section-subtitle,
+  .corporate-training .feature-description,
+  .corporate-training .cta-subtitle,
+  .corporate-training .faq-answer {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+  }
+
+  .corporate-training .capability-title,
+  .corporate-training .delivery-model-title,
+  .corporate-training .feature-title,
+  .corporate-training .faq-question {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+  }
+
+  .corporate-training .delivery-model-description,
+  .corporate-training .cta-feature-label,
+  .corporate-training .stats-label {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+
+  .corporate-training .cta-content {
+    width: 100%;
+    max-width: 100% !important;
+    align-items: stretch;
+  }
+
+  .corporate-training .cta-header {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .corporate-training .cta-subtitle {
+    max-width: 100% !important;
+  }
+
+  .corporate-training .cta-buttons {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    gap: 12px;
+  }
+
+  .corporate-training .cta-btn-primary,
+  .corporate-training .cta-btn-secondary {
+    width: min(100%, 320px) !important;
+    min-width: 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .corporate-training .container,
+  .corporate-training .corporate-hero-container,
+  .corporate-training .what-sets-us-apart-container,
+  .corporate-training .cta-container,
+  .corporate-training .inner-hero-shell {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .corporate-training .inner-hero-title,
+  .corporate-training .one-stop-shop-title,
+  .corporate-training .section-title,
+  .corporate-training .what-sets-us-apart-title,
+  .corporate-training .cta-title {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+  }
+
+  .corporate-training .inner-hero-subtitle,
+  .corporate-training .inner-hero-description,
+  .corporate-training .one-stop-shop-description,
+  .corporate-training .section-subtitle,
+  .corporate-training .feature-description,
+  .corporate-training .cta-subtitle,
+  .corporate-training .faq-answer {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+
+  .corporate-training .capability-title,
+  .corporate-training .delivery-model-title,
+  .corporate-training .feature-title,
+  .corporate-training .faq-question {
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+  }
+
+  .corporate-training .delivery-model-description,
+  .corporate-training .cta-feature-label,
+  .corporate-training .stats-label {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+  }
+
+  .corporate-training .cta-content {
+    width: 100%;
+    max-width: 100% !important;
+    align-items: stretch;
+  }
+
+  .corporate-training .cta-header {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .corporate-training .cta-subtitle {
+    max-width: 100% !important;
+  }
+
+  .corporate-training .cta-buttons {
+    width: 100%;
+    max-width: 100%;
+    gap: 12px;
+  }
+
+  .corporate-training .cta-btn-primary,
+  .corporate-training .cta-btn-secondary {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0;
+    white-space: normal;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .corporate-training .one-stop-shop-section .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    overflow-x: clip;
+  }
+
+  .corporate-training .capability-cards-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 16px !important;
+  }
+
+  .corporate-training .capability-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+    padding: 20px !important;
+    gap: 16px !important;
+    align-items: center;
+  }
+
+  .corporate-training .capability-content {
+    min-width: 0 !important;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .corporate-training .capability-title {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .corporate-training .one-stop-shop-section {
+    padding: 64px 0;
+  }
+
+  .corporate-training .one-stop-shop-section .container {
+    width: 100%;
+    max-width: 100% !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    box-sizing: border-box;
+  }
+
+  .corporate-training .one-stop-shop-header {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 32px;
+    align-items: flex-start;
+  }
+
+  .corporate-training .one-stop-shop-title {
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0;
+    font-size: 34px !important;
+    line-height: 1.2 !important;
+  }
+
+  .corporate-training .one-stop-shop-description {
+    width: 100%;
+    max-width: 100%;
+    font-size: 18px !important;
+    line-height: 1.55 !important;
+  }
+
+  .corporate-training .one-stop-shop-description p {
+    margin: 0 0 10px 0;
+  }
+
+  .corporate-training .capability-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+    width: 100%;
+  }
+
+  .corporate-training .capability-card {
+    min-width: 0;
+    padding: 20px !important;
+    gap: 16px !important;
+  }
+
+  .corporate-training .capability-content {
+    min-width: 0;
+  }
+
+  .corporate-training .capability-title {
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Unified container alignment across all Corporate Training sections */
+.corporate-training {
+  --ct-container-max: 1536px;
+  --ct-container-gutter: 78px;
+}
+
+.corporate-training .container,
+.corporate-training .corporate-hero-container,
+.corporate-training .what-sets-us-apart-container,
+.corporate-training .cta-container,
+.corporate-training .inner-hero-shell,
+.corporate-training .whats-included-corporate-flex-section,
+.corporate-training .success-stories-section > .max-w-screen-2xl {
+  width: 100%;
+  max-width: var(--ct-container-max) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--ct-container-gutter) !important;
+  padding-right: var(--ct-container-gutter) !important;
+  box-sizing: border-box;
+}
+
+.corporate-training .success-stories-section {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+@media (max-width: 1024px) {
+  .corporate-training {
+    --ct-container-gutter: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .corporate-training {
+    --ct-container-gutter: 16px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .corporate-training {
+    --ct-container-max: 2200px;
+    --ct-container-gutter: 96px;
+  }
+}
+
+@media (min-width: 3840px) {
+  .corporate-training {
+    --ct-container-max: 2600px;
+    --ct-container-gutter: 140px;
   }
 }

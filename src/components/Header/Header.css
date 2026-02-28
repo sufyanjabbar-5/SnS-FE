@@ -474,3 +474,19 @@
     width: 100%;
   }
 }
+
+@media (min-width: 2560px) {
+  .header-container {
+    max-width: 2200px;
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+}
+
+@media (min-width: 3840px) {
+  .header-container {
+    max-width: 2600px;
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+}

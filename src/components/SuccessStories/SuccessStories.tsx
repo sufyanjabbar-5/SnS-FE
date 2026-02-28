@@ -14,6 +14,7 @@ interface Testimonial {
 
 interface SuccessStoriesProps {
   containerClassName?: string;
+  sectionClassName?: string;
 }
 
 const testimonials: Testimonial[] = [
@@ -47,10 +48,11 @@ const testimonials: Testimonial[] = [
 ];
 
 const SuccessStories: React.FC<SuccessStoriesProps> = ({
-  containerClassName = 'max-w-screen-2xl'
+  containerClassName = 'max-w-screen-2xl',
+  sectionClassName = ''
 }) => {
   return (
-     <section className="bg-[#c2ddff]/15 py-14 sm:py-20 px-6 md:px-12 lg:px-20">
+     <section className={`success-stories-section bg-[#c2ddff]/15 py-14 sm:py-20 px-6 md:px-12 lg:px-20 ${sectionClassName}`.trim()}>
             <div className={`${containerClassName} mx-auto w-full`}>
               <div className="text-center">
                 <h2 className="text-[30px] md:text-3xl lg:text-4xl font-bold leading-tight text-[#1f3a5f] mb-4">Success Stories</h2>

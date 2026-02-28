@@ -199,3 +199,19 @@
   }
 }
 
+@media (min-width: 2560px) {
+  .footer-container {
+    max-width: 2200px !important;
+    padding-left: 96px !important;
+    padding-right: 96px !important;
+  }
+}
+
+@media (min-width: 3840px) {
+  .footer-container {
+    max-width: 2600px !important;
+    padding-left: 140px !important;
+    padding-right: 140px !important;
+  }
+}
+
